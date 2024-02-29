@@ -2,7 +2,6 @@ import React, {useContext} from 'react';
 import '../../Styles/ContentLastBlock.css'
 import '../../Styles/content.css'
 import emblem  from '../../assets/emblem.png'
-import bg  from '../../assets/bg-last.png'
 import ModalContext from "../FormPay/ModalContext";
 import Buttonreg from "../../assets/Buttonreg";
 const ContentLastBlock = (props) => {

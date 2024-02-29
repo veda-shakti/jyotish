@@ -3,7 +3,6 @@ import Container from "../Container";
 import ContentFeedBack from "../Content/ContentFeedBack";
 import Contentinline from "../Content/Contentinline";
 import ContentBlockVebinar from "../Content/ContentBlockVebinar";
-import ContentLastBlock from "../Content/ContentLastBlock";
 import AdaptiveTag from "../Content/AdaptiveTag";
 import Buttonreg from "../../assets/Buttonreg";
 import ModalContext from "../FormPay/ModalContext";

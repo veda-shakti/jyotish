@@ -6,7 +6,7 @@ import ContactFormPay from "./components/FormPay/ContactFormPay";
 import ModalContext from "./components/FormPay/ModalContext";
 import LanguageContext from "./components/LanguageContext";
 import Loader from './components/Loader';
-import bgimg from './assets/bg.webp'
+import imgBg from './assets/bg.webp'
 
 function App()
 {
@@ -18,7 +18,6 @@ function App()
     const [animating, setAnimating] = useState(false);
     const [currentFrameIndex=0, setCurrentFrameIndex] = useState(0);
     const [bgtypebg, setBgtypebg] = useState('bg-img-1');
-    const [imgBg, setImgBg] = useState(bgimg);
     const isSwiping = useRef(false);
 
 

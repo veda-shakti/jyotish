@@ -69,25 +69,25 @@ const BackgroundBox = (props) => {
 
     return (
         <div className={`box ${props.bg}`} id={`box1`}>
-            <img src={props.bgimg} id="bg-effect"/>
+            <img src={props.bgimg} id="bg-effect" alt={"backgroundeffect"}/>
             <div className={`${close ? 'closing' : open ? 'opening' : ''} left1 ${bgtype}` }>
                 <img className={`${bgtype}`} src={bgImage1}
-                      id="bg-image-1"/>
+                      id="bg-image-1" alt={"beautiful"}/>
             </div>
 
             <div className={`${close ? 'closing' : open ? 'opening' : ''} right1 ${bgtype} `}>
                 <img className={`${bgtype}`} src={bgImage2}
-                     id="bg-image-2"/>
+                     id="bg-image-2" alt={"beautiful"}/>
             </div>
 
             <div className={`${close ? 'closing' : open ? 'opening' : ''} right2 ${bgtype}`}>
                 <img className={`${bgtype} ${close ? 'closing' : open ? 'opening' : ''}`} src={bgImage1}
-                     id="bg-image-3"/>
+                     id="bg-image-3" alt={"beautiful"}/>
             </div>
 
             <div className={`${close ? 'closing' : open ? 'opening' : ''} left2 ${bgtype}`}>
                 <img className={`${bgtype} ${close ? 'closing' : open ? 'opening' : ''}`} src={bgImage2}
-                     id="bg-image-4"/>
+                     id="bg-image-4" alt={"beautiful"}/>
             </div>
 
             {props.children}
