@@ -17,7 +17,7 @@ const ContentFullWidth = (props) => {
                         <img src={img1} alt={"fullwidthbg"} id="bg-fullwidth-image-1"/>
                         <img src={img2} alt={"fullwidthbg"}  id="bg-fullwidth-image-2"/>
                         <div className="saveanimation">
-                            <img src={img3} id="bg-fullwidth-image-3"/>
+                            <img src={img3} alt={"bigcircle"} id="bg-fullwidth-image-3"/>
                         </div>
                         <div className="frame8_block">
                             <div className="frame8_block_row1">
