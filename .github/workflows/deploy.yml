@@ -39,6 +39,9 @@ jobs:
         if [ "${{ github.actor }}" = "AlexUner" ]; then
           echo "CUSTOM_MESSAGE_BAD=💩 @AlexUner, иди убирай какахи!" >> $GITHUB_ENV
         fi
+        if [ "${{ github.actor }}" = "WarningNotError" ]; then
+        echo "CUSTOM_MESSAGE_BAD=💩 @eugenroot1, иди убирай какахи!" >> $GITHUB_ENV
+        fi
 
     - name: Set custom message good
       run: |
