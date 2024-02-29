@@ -1,0 +1,1042 @@
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: #E8F5FA;
+    background: linear-gradient(180deg, #000000 0%, #000A2E 44.5%, #3B519E 100%);
+
+}
+#bg-effect {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.fullwidthbg {
+    overflow: hidden;
+}
+.box#box1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.dark::after {
+    opacity: 1!important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #9D5B36;
+    background: linear-gradient(180deg, #FFF 0%, #F4FCFF 42.19%, #FFF9ED 79.17%);
+    -webkit-transform: translateY(100vh);
+    -ms-transform: translateY(100vh);
+    transform: translateY(100vh);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+footer .column {
+    padding: 0 120px 64px 120px ;
+    width: 100%;
+}
+footer .column.column2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+footer a {
+        color: #9D5B36;
+        font-size: 24px;
+        font-family: "Futura PT", sans-serif;
+        line-height: 26.4px;
+        text-decoration: none;
+}
+.SocialButtons{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+}
+.mediabutton {
+    width: 50px;
+    margin: 10px 0;
+    height: 50px;
+    border-radius:50% ;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.mediabutton:hover {
+    cursor: pointer;
+    -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+    box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+    scale: 1.1;
+}
+
+#bg-image-1.bg-img-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 876px;
+    height: 925px;
+    animation: scale 14s infinite linear;
+    border-radius: 50%;
+    filter: blur(1px);
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+
+.opening.left1.bg-img-1,
+.closing.left1.bg-img-1 {
+    position: absolute;
+    left: -28px;
+    bottom: -120px;
+    width: 876px;
+    height: 925px;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 1;
+}
+.opening.right2.bg-img-1,
+.closing.right2.bg-img-1,
+.opening.left1.bg-img-2,
+.closing.left1.bg-img-2,
+.opening.right2{
+    display: none;
+}
+#bg-image-2.bg-img-1 {
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    width: 765px;
+    height: 765px;
+    filter: blur(3px);
+    animation: rotate 80s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+    display: none;
+}
+.opening.right1.bg-img-1,
+.closing.right1.bg-img-1 {
+    position: absolute;
+    bottom:-204px;
+    right: -354px;
+    width: 765px;
+    height: 765px;
+    display: none;
+}
+
+#bg-image-3.bg-img-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 900px;
+    height: 900px;
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+    z-index: -2;
+}
+
+.opening.right2.bg-img-2,
+.closing.right2.bg-img-2 {
+    position: absolute;
+    bottom:-77px;
+    right: -178px;
+    width: 900px;
+    height: 900px;
+    opacity: 0.8;
+    display: unset;
+}
+
+#bg-image-4.bg-img-2 {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 1177px;
+    height: 1177px;
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.opening.left2.bg-img-2,
+.closing.left2.bg-img-2 {
+    position: absolute;
+    left: -500px;
+    bottom: -624px;
+    width: 1177px;
+    height: 1177px;
+    display: none;
+}
+
+
+#bg-image-1.bg-img-3 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 979px;
+    height: 979px;
+    animation: scale 14s infinite linear;
+    filter: blur(3px);
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.opening.left1.bg-img-3,
+.closing.left1.bg-img-3 {
+    position: absolute;
+    left: -335px;
+    top: -420px;
+    width: 979px;
+    height: 979px;
+}
+#bg-image-2.bg-img-3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 1087px;
+    height: 1087px;
+    filter: blur(1px);
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.opening.right1.bg-img-3,
+.closing.right1.bg-img-3 {
+    position: absolute;
+    bottom:-552px;
+    right: -346px;
+    width: 1087px;
+    height: 1087px;
+}
+#bg-image-3.bg-img-4 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 680px;
+    height: 775px;
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.opening.right2.bg-img-4,
+.closing.right2.bg-img-4 {
+    position: absolute;
+    top:-86px;
+    right: -57px;
+    width: 680px;
+    height: 775px;
+}
+#bg-image-4.bg-img-4 {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 591px;
+    height: 872px;
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+
+.opening.left2.bg-img-4,
+.closing.left2.bg-img-4 {
+    position: absolute;
+    left: -111px;
+    bottom: -338px;
+    width: 591px;
+    height: 872px;
+}
+#bg-image-3.bg-img-5 {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 572px;
+    height: 572px;
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+
+}
+.opening.right2.bg-img-5,
+.closing.right2.bg-img-5 {
+    position: absolute;
+    top:0px;
+    right: -70px;
+    width: 572px;
+    height: 572px;
+}
+
+#bg-image-4.bg-img-5 {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 515px;
+    height: 554px;
+    animation: scale 14s infinite linear;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+.opening.left2.bg-img-5,
+.closing.left2.bg-img-5 {
+    position: absolute;
+    bottom:-30px;
+    left: -58px;
+    width: 515px;
+    height: 554px;
+}
+
+
+
+
+.closing.left1,
+.closing.left2
+{
+    animation: close2 0.8s forwards;
+}
+.opening.left1,
+.opening.left2
+{
+    animation: open1 0.8s forwards;
+}
+
+.closing.right1,
+.closing.right2
+{
+    animation: close 0.8s forwards;
+}
+
+.opening.right1,
+.opening.right2
+{
+    animation: open2 0.8s forwards;
+}
+
+@keyframes scale{
+    0%{
+        scale: 1 ;
+    }
+    50%{
+         scale: 1.05 ;
+     }
+    100%{
+        scale: 1 ;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes close {
+    from{
+      transform: translateX(0) ;
+    }
+    to{
+        transform: translateX(100%) ;
+    }
+}
+
+
+@keyframes close2 {
+    from{
+        transform: translateX(0) ;
+    }
+    to{
+        transform: translateX(-100%) ;
+    }
+}
+
+
+@keyframes open1 {
+    from{
+        transform: translateX(-100%) ;
+    }
+    to{
+        transform: translateX(0) ;
+    }
+
+}
+@keyframes open2 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@media (min-width: 960px) and (max-width: 1399px) {
+
+    #bg-image-1.bg-img-1 {
+        width: 806px;
+        height: 818px;
+    }
+
+    .opening.left1.bg-img-1,
+    .closing.left1.bg-img-1 {
+        left: -416px;
+        top: -281px;
+        width: 1276px;
+        height: 1276px;
+    }
+    #bg-image-2.bg-img-1 {
+        width: 585px;
+        height: 594px;
+    }
+    .opening.right1.bg-img-1,
+    .closing.right1.bg-img-1 {
+        bottom:-156px;
+        right: -272px;
+        width: 585px;
+        height: 594px;
+    }
+
+    #bg-image-3.bg-img-2 {
+        width: 627px;
+        height: 627px;
+    }
+    .opening.right2.bg-img-2,
+    .closing.right2.bg-img-2 {
+        position: absolute;
+        top:-54px;
+        right: -277px;
+        width: 627px;
+        height: 627px;
+    }
+
+    #bg-image-4.bg-img-2 {
+        width: 919px;
+        height: 919px;
+    }
+    .opening.left2.bg-img-2,
+    .closing.left2.bg-img-2 {
+        position: absolute;
+        left: -409px;
+        bottom: -501px;
+        width: 1177px;
+        height: 1177px;
+    }
+
+    #bg-image-1.bg-img-3 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 760px;
+        height: 760px;
+        animation: scale 14s infinite linear;
+        filter: blur(3px);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.left1.bg-img-3,
+    .closing.left1.bg-img-3 {
+        position: absolute;
+        left: -331px;
+        top: -260px;
+        width: 760px;
+        height: 760px;
+    }
+    #bg-image-2.bg-img-3 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 843px;
+        height: 843px;
+        filter: blur(1px);
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right1.bg-img-3,
+    .closing.right1.bg-img-3 {
+        position: absolute;
+        bottom:-428px;
+        right: -395px;
+        width: 843px;
+        height: 843px;
+    }
+
+    #bg-image-3.bg-img-4 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 640px;
+        height: 640px;
+        animation: scale 14s infinite linear;
+        filter: blur(3px);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right2.bg-img-4,
+    .closing.right2.bg-img-4 {
+        position: absolute;
+        top:-117px;
+        right: -120px;
+        width: 640px;
+        height: 640px;
+    }
+    #bg-image-4.bg-img-4 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 423px;
+        height: 596px;
+        filter: blur(1px);
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.left2.bg-img-4,
+    .closing.left2.bg-img-4 {
+        position: absolute;
+        bottom:-177px;
+        left: -30px;
+        width: 423px;
+        height: 596px;
+    }
+
+}
+@media (min-width: 560px) and (max-width: 959px) {
+
+    .left1,
+    .left2,
+    .right2,
+    .right1{
+        opacity: 0.6;
+    }
+    #bg-image-1.bg-img-1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 862px;
+        height: 862px;
+        animation: rotate 120s infinite linear;
+        border-radius: 50%;
+        filter: blur(1px);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+
+    .opening.left1.bg-img-1,
+    .closing.left1.bg-img-1 {
+        position: absolute;
+        left: -550px;
+        top: -450px;
+        width: 862px;
+        height: 862px;
+        border-radius: 50%;
+    }
+    #bg-image-2.bg-img-1 {
+        position: absolute;
+        bottom:0px;
+        right: 0px;
+        width: 626px;
+        height: 626px;
+        filter: blur(3px);
+        animation: rotate 80s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right1.bg-img-1,
+    .closing.right1.bg-img-1 {
+        position: absolute;
+        bottom:-350px;
+        right: -330px;
+        width: 626px;
+        height: 626px;
+    }
+
+    #bg-image-3.bg-img-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 532px;
+        height: 532px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+
+    .opening.right2.bg-img-2,
+    .closing.right2.bg-img-2 {
+        position: absolute;
+        top:-230px;
+        right: -250px;
+        width: 532px;
+        height: 532px;
+    }
+
+    #bg-image-4.bg-img-2 {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 778px;
+        height: 778px;
+        animation: scale 14s infinite linear;
+    }
+    .opening.left2.bg-img-2,
+    .closing.left2.bg-img-2 {
+        position: absolute;
+        left: -355px;
+        bottom: -380px;
+        width: 778px;
+        height: 778px;
+    }
+
+    #bg-image-1.bg-img-3 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 685px;
+        height: 685px;
+        animation: scale 14s infinite linear;
+        filter: blur(3px);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.left1.bg-img-3,
+    .closing.left1.bg-img-3 {
+        position: absolute;
+        left: -377px;
+        top: -239px;
+        width: 685px;
+        height: 685px;
+    }
+    #bg-image-2.bg-img-3 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 691px;
+        height: 691px;
+        filter: blur(1px);
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right1.bg-img-3,
+    .closing.right1.bg-img-3 {
+        position: absolute;
+        bottom:-302px;
+        right: -386px;
+        width: 691px;
+        height: 691px;
+    }
+    #bg-image-3.bg-img-4 {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 497px;
+        height: 497px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right2.bg-img-4,
+    .closing.right2.bg-img-4 {
+        position: absolute;
+        top:-66px;
+        right: -117px;
+        width: 477px;
+        height: 497px;
+    }
+    #bg-image-4.bg-img-4 {
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 402px;
+        height: 503px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+
+    .opening.left2.bg-img-4,
+    .closing.left2.bg-img-4 {
+        position: absolute;
+        left: -60px;
+        bottom: -148px;
+        width: 402px;
+        height: 503px;
+    }
+    #bg-image-3.bg-img-5 {
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 350px;
+        height: 350px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+
+    }
+    .opening.right2.bg-img-5,
+    .closing.right2.bg-img-5 {
+        position: absolute;
+        top:0px;
+        right: -50px;
+        width: 350px;
+        height: 350px;
+    }
+
+    #bg-image-4.bg-img-5 {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 358px;
+        height: 358px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.left2.bg-img-5,
+    .closing.left2.bg-img-5 {
+        position: absolute;
+        bottom:-20px;
+        left: -20px;
+        width: 358px;
+        height: 358px;
+    }
+
+    footer .column {
+        padding: 0 30px 65px 30px ;
+        width: 100%;
+    }
+    .SocialButtons{
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 559px) {
+
+    .left1,
+    .left2,
+    .right2,
+    .right1{
+        opacity: 0.6;
+    }
+    #bg-image-1.bg-img-1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 600px;
+        height: 600px;
+        animation: rotate 120s infinite linear;
+        border-radius: 50%;
+        filter: blur(1px);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+
+    .opening.left1.bg-img-1,
+    .closing.left1.bg-img-1 {
+        position: absolute;
+        left: -300px;
+        top: -200px;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+    }
+    #bg-image-2.bg-img-1 {
+        position: absolute;
+        bottom:0px;
+        right: 0px;
+        width: 407px;
+        height: 407px;
+        filter: blur(3px);
+        animation: rotate 80s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right1.bg-img-1,
+    .closing.right1.bg-img-1 {
+        position: absolute;
+        bottom:-200px;
+        right: -200px;
+        width: 407px;
+        height: 407px;
+    }
+
+    #bg-image-3.bg-img-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 301px;
+        height: 301px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+
+    .opening.right2.bg-img-2,
+    .closing.right2.bg-img-2 {
+        position: absolute;
+        top:-70px;
+        right: -100px;
+        width: 301px;
+        height: 301px;
+    }
+
+    #bg-image-4.bg-img-2 {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 478px;
+        height: 478px;
+        animation: scale 14s infinite linear;
+    }
+    .opening.left2.bg-img-2,
+    .closing.left2.bg-img-2 {
+        position: absolute;
+        left: -200px;
+        bottom: -200px;
+        width: 478px;
+        height: 478px;
+    }
+
+
+    #bg-image-1.bg-img-3 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 635px;
+        height: 635px;
+        animation: scale 14s infinite linear;
+        filter: blur(3px);
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.left1.bg-img-3,
+    .closing.left1.bg-img-3 {
+        position: absolute;
+        left: -377px;
+        top: -239px;
+        width: 635px;
+        height: 635px;
+    }
+    #bg-image-2.bg-img-3 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 641px;
+        height: 641px;
+        filter: blur(1px);
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right1.bg-img-3,
+    .closing.right1.bg-img-3 {
+        position: absolute;
+        bottom:-302px;
+        right: -386px;
+        width: 641px;
+        height: 641px;
+    }
+    #bg-image-3.bg-img-4 {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 397px;
+        height: 397px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.right2.bg-img-4,
+    .closing.right2.bg-img-4 {
+        position: absolute;
+        top:-66px;
+        right: -107px;
+        width: 397px;
+        height: 397px;
+    }
+    #bg-image-4.bg-img-4 {
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 302px;
+        height: 403px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+
+    .opening.left2.bg-img-4,
+    .closing.left2.bg-img-4 {
+        position: absolute;
+        left: -60px;
+        bottom: -108px;
+        width: 302px;
+        height: 403px;
+    }
+    #bg-image-3.bg-img-5 {
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 250px;
+        height: 250px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+
+    }
+    .opening.right2.bg-img-5,
+    .closing.right2.bg-img-5 {
+        position: absolute;
+        top:19px;
+        right: -30px;
+        width: 250px;
+        height: 250px;
+    }
+
+    #bg-image-4.bg-img-5 {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 208px;
+        height: 208px;
+        animation: scale 14s infinite linear;
+        user-select: none;
+        -moz-user-select: none; /* Для Firefox */
+        -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+        -ms-user-select: none; /* Для Internet Explorer/Edge */
+    }
+    .opening.left2.bg-img-5,
+    .closing.left2.bg-img-5 {
+        position: absolute;
+        bottom:20px;
+        left: 0px;
+        width: 208px;
+        height: 208px;
+    }
+    footer {
+        z-index: 100;
+        height: 200px;
+        -webkit-transform: translateY(100vh);
+        -ms-transform: translateY(100vh);
+        transform: translateY(100vh);
+        opacity: 0;
+        transition: all 0.8s ease-in-out;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    footer .column {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer .column.column2 {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    footer a {
+        color: #9D5B36;
+        font-size: 16px;
+        font-family: "Futura PT", sans-serif;
+        line-height: 110%;
+        text-decoration: none;
+    }
+    .SocialButtons{
+        display: none;
+    }
+}
+

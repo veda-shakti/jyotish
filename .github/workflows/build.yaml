@@ -1,0 +1,146 @@
+name: Build and Deploy
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Install SASS
+      run: npm install -g sass
+
+    - name: Compile SCSS to CSS
+      run: sass src/Styles/scss:src/Styles
+
+    - name: Build
+      run: npm run build
+
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: build/
+
+    - name: Set custom message bad
+      run: |
+        if [ "${{ github.actor }}" = "IvanGudyushkin" ]; then
+          echo "CUSTOM_MESSAGE_BAD=💩 @Ivanandreevichgud, иди убирай какахи!" >> $GITHUB_ENV
+        fi
+        if [ "${{ github.actor }}" = "AlexUner" ]; then
+          echo "CUSTOM_MESSAGE_BAD=💩 @AlexUner, иди убирай какахи!" >> $GITHUB_ENV
+        fi
+
+    - name: Set custom message good
+      run: |
+        if [ "${{ github.actor }}" = "IvanGudyushkin" ]; then
+          echo "CUSTOM_MESSAGE_GOOD=🏆 @Ivanandreevichgud, молодец!" >> $GITHUB_ENV
+        fi
+        if [ "${{ github.actor }}" = "AlexUner" ]; then
+          echo "CUSTOM_MESSAGE_GOOD=🏆 @AlexUner, молодец!" >> $GITHUB_ENV
+        fi
+
+    - name: Send Telegram Notification on Failure build
+      if: failure()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        message: |
+          🚨 1/2. Сборка провалена!
+          ${{ env.CUSTOM_MESSAGE_BAD }}
+          ‼️ Пожалуйста, проверьте логи сборки в репозитории.
+          *️⃣ Подробности сборки можно посмотреть здесь: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+    - name: Send Telegram Notification on Success build
+      if: success()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        message: |
+          ✅ 1/2. Сборка успешно завершена!
+          ${{ env.CUSTOM_MESSAGE_GOOD }}
+          *️⃣ Подробности сборки можно посмотреть здесь: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: build
+
+    - name: Install lftp for SFTP
+      run: sudo apt-get install lftp
+
+    - name: SFTP Deploy
+      run: |
+        lftp -e "
+        set ssl:verify-certificate no;
+        set sftp:auto-confirm yes;
+        set net:socket-buffer 524288;
+        open sftp://devilaks@devilaks.ftp.tools;
+        user ${{ secrets.SFTP_USERNAME }} ${{ secrets.SFTP_PASSWORD }};
+        lcd ./build;
+
+        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/godovoy-astroprognoz;
+
+        bye;
+        "
+
+    - name: Clear MODX Cache
+      run: curl https://godovoy-astroprognoz.anastasiyashakti.com/clear-cache-script.php?key=${{ secrets.CACHE_SECRET_KEY }}
+
+    - name: Set custom message bad
+      run: |
+        if [ "${{ github.actor }}" = "IvanGudyushkin" ]; then
+          echo "CUSTOM_MESSAGE_BAD=💩 @Ivanandreevichgud, иди убирай какахи!" >> $GITHUB_ENV
+        fi
+        if [ "${{ github.actor }}" = "AlexUner" ]; then
+          echo "CUSTOM_MESSAGE_BAD=💩 @AlexUner, иди убирай какахи!" >> $GITHUB_ENV
+        fi
+
+    - name: Set custom message good
+      run: |
+        if [ "${{ github.actor }}" = "IvanGudyushkin" ]; then
+          echo "CUSTOM_MESSAGE_GOOD=🏆 @Ivanandreevichgud, молодец!" >> $GITHUB_ENV
+        fi
+        if [ "${{ github.actor }}" = "AlexUner" ]; then
+          echo "CUSTOM_MESSAGE_GOOD=🏆 @AlexUner, молодец!" >> $GITHUB_ENV
+        fi
+
+    - name: Send Telegram Notification on Deploy Success
+      if: failure()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        message: |
+          🚨 2/2. Развёртывание не удалось!
+          ${{ env.CUSTOM_MESSAGE_BAD }}
+          ‼️ Пожалуйста, проверьте логи сборки в репозитории.
+          *️⃣ Подробности сборки можно посмотреть здесь: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+    - name: Send Telegram Notification on Deploy Success
+      if: success()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        message: |
+          🚀 2/2. Развёртывание успешно завершено!
+          ${{ env.CUSTOM_MESSAGE_GOOD }}
+          *️⃣ Проверьте сайт: https://anastasiyashakti.com

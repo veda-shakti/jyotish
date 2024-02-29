@@ -1,0 +1,344 @@
+@charset "UTF-8";
+.lastblock {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  font-family: "Futura PT", sans-serif;
+}
+.lastblock #postcontainer4.postcontainer {
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.lastblock .lastblock_ps {
+  font-size: 20px;
+  margin: 0;
+  line-height: 110%;
+}
+.lastblock .lastblock_ps a {
+  color: #FFE093;
+  text-decoration: none;
+}
+.lastblock .lastblock_ps a:hover {
+  text-decoration: underline;
+}
+.lastblock .lastblock_info {
+  width: 580px;
+  height: 657px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lastblock .lastblock_info .lastblock_img {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
+}
+.lastblock .lastblock_info .lastblock_bg {
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none; /* Для Firefox */
+  -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+  -ms-user-select: none; /* Для Internet Explorer/Edge */
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lastblock .lastblock_info .lastblock_h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  position: relative;
+  margin: 0 0 20px 0;
+  text-align: center;
+  background: linear-gradient(238deg, #713513 0.85%, #BE7C4D 43.51%, #DCAE7B 47.39%, #BE7C4D 50.62%, #713513 90.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lastblock .lastblock_info .lastblock_p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.lastblock .lastblock_info .lastblock_p b {
+  background: linear-gradient(238deg, #713513 0.85%, #BE7C4D 43.51%, #DCAE7B 47.39%, #BE7C4D 50.62%, #713513 90.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.lastblock .lastblock_info .lastblock_cost {
+  margin-bottom: 30px;
+}
+.lastblock .lastblock_info .lastblock_cost .lastblock_p {
+  margin-bottom: 5px;
+}
+.lastblock .lastblock_info .reg {
+  margin-bottom: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+  .lastblock .lastblock_ps {
+    font-size: 20px;
+    margin: 0;
+    line-height: 110%;
+  }
+  .lastblock .lastblock_ps a {
+    color: #FFE093;
+    text-decoration: none;
+  }
+  .lastblock .lastblock_ps a:hover {
+    text-decoration: underline;
+  }
+  .lastblock .lastblock_info {
+    width: 380px;
+    height: 657px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lastblock .lastblock_info .lastblock_img {
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+  }
+  .lastblock .lastblock_info .lastblock_bg {
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none; /* Для Firefox */
+    -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+    -ms-user-select: none; /* Для Internet Explorer/Edge */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lastblock .lastblock_info .lastblock_h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    position: relative;
+    margin: 0 0 20px 0;
+    text-align: center;
+    background: linear-gradient(238deg, #713513 0.85%, #BE7C4D 43.51%, #DCAE7B 47.39%, #BE7C4D 50.62%, #713513 90.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lastblock .lastblock_info .lastblock_p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .lastblock .lastblock_info .lastblock_p b {
+    background: linear-gradient(238deg, #713513 0.85%, #BE7C4D 43.51%, #DCAE7B 47.39%, #BE7C4D 50.62%, #713513 90.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  .lastblock .lastblock_info .lastblock_cost {
+    margin-bottom: 20px;
+  }
+  .lastblock .lastblock_info .lastblock_cost .lastblock_p {
+    margin-bottom: 5px;
+  }
+  .lastblock .lastblock_info .reg {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+  .lastblock {
+    height: 100%;
+    width: 100%;
+  }
+  .lastblock .lastblock_ps {
+    font-size: 18px;
+    margin: 0;
+    line-height: 110%;
+    text-align: center;
+  }
+  .lastblock .lastblock_ps a {
+    color: #FFE093;
+    text-decoration: none;
+  }
+  .lastblock .lastblock_ps a:hover {
+    text-decoration: underline;
+  }
+  .lastblock .lastblock_info {
+    width: 420px;
+    height: 550px;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lastblock .lastblock_info .lastblock_img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .lastblock .lastblock_info .lastblock_h2 {
+    font-size: 24px;
+    line-height: 100%;
+    position: relative;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .lastblock .lastblock_info .lastblock_p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .lastblock .lastblock_info .lastblock_reg {
+    font-family: "Futura PT", sans-serif;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 40px;
+    border-radius: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+  .lastblock {
+    height: calc(100% - 10px);
+    width: 100%;
+  }
+  .lastblock .contentblock {
+    width: 100%;
+    height: 100%;
+  }
+  .lastblock .lastblock_ps {
+    font-size: 16px;
+    margin: 0;
+    line-height: 110%;
+    text-align: center;
+  }
+  .lastblock .lastblock_ps a {
+    color: #FFE093;
+    text-decoration: none;
+  }
+  .lastblock .lastblock_ps a:hover {
+    text-decoration: underline;
+  }
+  .lastblock .lastblock_info {
+    position: absolute;
+    text-align: center;
+    width: 240px;
+    height: 420px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lastblock .lastblock_info .lastblock_img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .lastblock .lastblock_info .lastblock_h2 {
+    font-size: 24px;
+    line-height: 100%;
+    position: relative;
+    margin: 0 0 15px 0;
+    text-align: center;
+  }
+  .lastblock .lastblock_info .lastblock_p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .lastblock .lastblock_info .lastblock_reg {
+    font-family: "Futura PT", sans-serif;
+    bottom: 0;
+    width: 180px;
+    height: 35px;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 35px;
+    border-radius: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=ContentLastBlock.css.map */
