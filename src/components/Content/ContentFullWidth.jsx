@@ -14,8 +14,8 @@ const ContentFullWidth = (props) => {
             <div className="content fullwidthcontent" id={`content${props.contentid}`}>
                 <div className="scrolldiv fullwidthscroll" id={`scroll${props.contentid}`}>
                     <div className="contentblock">
-                        <img src={img1} id="bg-fullwidth-image-1"/>
-                        <img src={img2} id="bg-fullwidth-image-2"/>
+                        <img src={img1} alt={"fullwidthbg"} id="bg-fullwidth-image-1"/>
+                        <img src={img2} alt={"fullwidthbg"}  id="bg-fullwidth-image-2"/>
                         <div className="saveanimation">
                             <img src={img3} id="bg-fullwidth-image-3"/>
                         </div>

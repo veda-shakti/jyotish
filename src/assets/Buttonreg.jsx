@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import AdaptiveTag from "../components/Content/AdaptiveTag";
 import LanguageContext from "../components/LanguageContext";
 import buttonimg from "./button_reg.png"
 import cl from "./regButton.module.css"

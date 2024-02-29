@@ -3,11 +3,9 @@ import '../Styles/background.css';
 import telegram from '../assets/telegram_social.svg'
 import insta from '../assets/insta_social.svg'
 import bgimage11 from '../assets/bg-pic-1-1.webp'
-import bgimage12 from '../assets/bg-pic-1-1.webp'
 import bgimage21 from '../assets/bg-pic-2-2.webp'
 import bgimage31 from '../assets/bg-pic-3-1.webp'
-import bgimage32 from '../assets/bg-pic-3-2.webp'
-import bgimage42 from '../assets/bg-pic-4-1.webp'
+import bgimage42 from '../assets/bg-pic-3-1.webp'
 import bgimage41 from '../assets/bg-pic-4-2.webp'
 import bgimage52 from '../assets/bg-pic-5-1.webp'
 import bgimage51 from '../assets/bg-pic-5-2.webp'
@@ -46,7 +44,7 @@ const BackgroundBox = (props) => {
             }
             if (props.bgtype === "bg-img-3") {
                 setBgImage1(bgimage31);
-                setBgImage2(bgimage32)
+                setBgImage2("")
             }
             if (props.bgtype === "bg-img-4") {
                 setBgImage1(bgimage41);
@@ -71,25 +69,25 @@ const BackgroundBox = (props) => {
 
     return (
         <div className={`box ${props.bg}`} id={`box1`}>
-            <img src={props.bgimg} id="bg-effect"/>
+            <img src={props.bgimg} id="bg-effect" alt={"backgroundeffect"}/>
             <div className={`${close ? 'closing' : open ? 'opening' : ''} left1 ${bgtype}` }>
                 <img className={`${bgtype}`} src={bgImage1}
-                      id="bg-image-1"/>
+                      id="bg-image-1" alt={"beautiful"}/>
             </div>
 
             <div className={`${close ? 'closing' : open ? 'opening' : ''} right1 ${bgtype} `}>
                 <img className={`${bgtype}`} src={bgImage2}
-                     id="bg-image-2"/>
+                     id="bg-image-2" alt={"beautiful"}/>
             </div>
 
             <div className={`${close ? 'closing' : open ? 'opening' : ''} right2 ${bgtype}`}>
                 <img className={`${bgtype} ${close ? 'closing' : open ? 'opening' : ''}`} src={bgImage1}
-                     id="bg-image-3"/>
+                     id="bg-image-3" alt={"beautiful"}/>
             </div>
 
             <div className={`${close ? 'closing' : open ? 'opening' : ''} left2 ${bgtype}`}>
                 <img className={`${bgtype} ${close ? 'closing' : open ? 'opening' : ''}`} src={bgImage2}
-                     id="bg-image-4"/>
+                     id="bg-image-4" alt={"beautiful"}/>
             </div>
 
             {props.children}

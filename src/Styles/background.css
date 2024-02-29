@@ -129,7 +129,12 @@ footer a {
 .closing.right2.bg-img-1,
 .opening.left1.bg-img-2,
 .closing.left1.bg-img-2,
-.opening.right2{
+.opening.right2,
+.opening.right1,
+.closing.right2,
+.closing.right1,
+.opening.right2.bg-img-3,
+.closing.right2.bg-img-3{
     display: none;
 }
 #bg-image-2.bg-img-1 {
@@ -208,10 +213,9 @@ footer a {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 979px;
-    height: 979px;
+    width: 753px;
+    height: 753px;
     animation: scale 14s infinite linear;
-    filter: blur(3px);
     user-select: none;
     -moz-user-select: none; /* Для Firefox */
     -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -220,10 +224,10 @@ footer a {
 .opening.left1.bg-img-3,
 .closing.left1.bg-img-3 {
     position: absolute;
-    left: -335px;
-    top: -420px;
-    width: 979px;
-    height: 979px;
+    left: -112px;
+    bottom: -131px;
+    width: 753px;
+    height: 753px;
 }
 #bg-image-2.bg-img-3 {
     position: absolute;
@@ -245,6 +249,7 @@ footer a {
     right: -346px;
     width: 1087px;
     height: 1087px;
+    display: none;
 }
 #bg-image-3.bg-img-4 {
     position: absolute;

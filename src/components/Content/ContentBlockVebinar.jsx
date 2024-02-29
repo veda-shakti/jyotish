@@ -1,8 +1,5 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import '../../Styles/ContentBlockVebinar.css'
-import ModalContext from "../FormPay/ModalContext";
-import AdaptiveTag from "./AdaptiveTag";
-import Buttonreg from "../../assets/Buttonreg";
 const ContentBlockVebinar = (props) => {
 
     return (
