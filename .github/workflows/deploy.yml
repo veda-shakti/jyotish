@@ -42,6 +42,7 @@ jobs:
         if [ "${{ github.actor }}" = "WarningNotError" ]; then
           echo "CUSTOM_MESSAGE_BAD=💩 @eugenroot1, иди убирай какахи!" >> $GITHUB_ENV
         fi
+        echo $CUSTOM_MESSAGE_BAD
 
     - name: Set custom message good
       run: |
@@ -51,6 +52,7 @@ jobs:
         if [ "${{ github.actor }}" = "AlexUner" ]; then
           echo "CUSTOM_MESSAGE_GOOD=🏆 @AlexUner, молодец!" >> $GITHUB_ENV
         fi
+        echo $CUSTOM_MESSAGE_GOOD
 
     - name: Send Telegram Notification on Failure build
       if: failure()
