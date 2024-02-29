@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: [push]
+on: workflow_dispatch
 
 jobs:
   build:
@@ -96,13 +96,11 @@ jobs:
         user ${{ secrets.SFTP_USERNAME }} ${{ secrets.SFTP_PASSWORD }};
         lcd ./build;
 
-        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/godovoy-astroprognoz;
+        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/test;
 
         bye;
         "
 
-    - name: Clear MODX Cache
-      run: curl https://godovoy-astroprognoz.anastasiyashakti.com/clear-cache-script.php?key=${{ secrets.CACHE_SECRET_KEY }}
 
     - name: Set custom message bad
       run: |
