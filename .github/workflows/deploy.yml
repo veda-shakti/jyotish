@@ -105,7 +105,8 @@ jobs:
 
         bye;
         "
-
+    - name: Clear MODX Cache
+      run : curl https://test.anastasiyashakti.com/clear-cache-script.php?key=${{ secrets.CACHE_SECRET_KEY }};
 
     - name: Set custom message bad
       run: |
