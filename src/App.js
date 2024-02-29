@@ -6,7 +6,6 @@ import ContactFormPay from "./components/FormPay/ContactFormPay";
 import ModalContext from "./components/FormPay/ModalContext";
 import LanguageContext from "./components/LanguageContext";
 import Loader from './components/Loader';
-
 import bgimg from './assets/bg.webp'
 
 function App()

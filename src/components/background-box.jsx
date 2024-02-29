@@ -3,11 +3,9 @@ import '../Styles/background.css';
 import telegram from '../assets/telegram_social.svg'
 import insta from '../assets/insta_social.svg'
 import bgimage11 from '../assets/bg-pic-1-1.webp'
-import bgimage12 from '../assets/bg-pic-1-1.webp'
 import bgimage21 from '../assets/bg-pic-2-2.webp'
 import bgimage31 from '../assets/bg-pic-3-1.webp'
-import bgimage32 from '../assets/bg-pic-3-2.webp'
-import bgimage42 from '../assets/bg-pic-4-1.webp'
+import bgimage42 from '../assets/bg-pic-3-1.webp'
 import bgimage41 from '../assets/bg-pic-4-2.webp'
 import bgimage52 from '../assets/bg-pic-5-1.webp'
 import bgimage51 from '../assets/bg-pic-5-2.webp'
@@ -46,7 +44,7 @@ const BackgroundBox = (props) => {
             }
             if (props.bgtype === "bg-img-3") {
                 setBgImage1(bgimage31);
-                setBgImage2(bgimage32)
+                setBgImage2("")
             }
             if (props.bgtype === "bg-img-4") {
                 setBgImage1(bgimage41);
