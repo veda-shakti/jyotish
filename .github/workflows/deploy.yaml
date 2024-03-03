@@ -101,13 +101,13 @@ jobs:
         user ${{ secrets.SFTP_USERNAME }} ${{ secrets.SFTP_PASSWORD }};
         lcd ./build;
 
-        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/jupiter;
+        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/jyotish;
 
         bye;
         "
         
     - name: Clear MODX Cache
-      run: curl https://jupiter.anastasiyashakti.com/clear-cache-script.php?key=${{ secrets.CACHE_SECRET_KEY }}
+      run: curl https://jyotish.anastasiyashakti.com/clear-cache-script.php?key=${{ secrets.CACHE_SECRET_KEY }}
 
     - name: Set custom message bad
       run: |
