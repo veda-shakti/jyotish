@@ -22,12 +22,12 @@ const ContentProgrammaKursa = (props) => {
                             <p className="programma_block_content">обучения ведической астрологии</p>
                         </div>
                         <div className="programma_block programma_mini">
-                            <h3 className="programma_block_title">18 месяцев</h3>
-                            <p className="programma_block_content">обучения ведической астрологии</p>
+                            <h3 className="programma_block_title">144 часа</h3>
+                            <p className="programma_block_content">живых теоретических лекций без воды</p>
                         </div>
                         <div className="programma_block programma_mini">
-                            <h3 className="programma_block_title">18 месяцев</h3>
-                            <p className="programma_block_content">обучения ведической астрологии</p>
+                            <h3 className="programma_block_title">72 часа</h3>
+                            <p className="programma_block_content">практики <u>на своих</u> натальных картах</p>
                         </div>
                         <div className="programma_block">
                             <h3 className="programma_block_title">Цель курса</h3>
@@ -78,15 +78,15 @@ const ContentProgrammaKursa = (props) => {
                             <div className="programma_block_info">
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Длительность</h4>
-                                    <span className="programma_block_description">8 месяцев</span>
+                                    <span className="programma_block_description">2 месяца</span>
                                 </div>
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Количество лекций</h4>
-                                    <span className="programma_block_description">16 практик</span>
+                                    <span className="programma_block_description">4 лекции</span>
                                 </div>
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Количество практик</h4>
-                                    <span className="programma_block_description">16 практик</span>
+                                    <span className="programma_block_description">4 практики</span>
                                 </div>
                             </div>
                             <span className="programma_block_PS">*I ступень доступна для прохождения с целью ознакомления с курсом без обязательного прохождения II и III ступеней. Если вы хотите принять участие в I ступени курса, нажмите на кнопку ниже.</span>
@@ -142,7 +142,7 @@ const ContentProgrammaKursa = (props) => {
                                 </div>
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Количество лекций</h4>
-                                    <span className="programma_block_description">16 практик</span>
+                                    <span className="programma_block_description">16 лекции</span>
                                 </div>
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Количество практик</h4>
@@ -156,7 +156,7 @@ const ContentProgrammaKursa = (props) => {
                         </div>
 
                         <div className="programma_block programma_block_last">
-                            <h3 className="programma_block_title">II ступень</h3>
+                            <h3 className="programma_block_title">III ступень</h3>
                             <span className="programma_block_description">
                                 Месяц 11: 12 знаков зодиака, влияние планет на восходящие знаки<br/>
                                 Месяц 12: 12 домов гороскопа — 12 сфер жизни<br/>
@@ -186,7 +186,7 @@ const ContentProgrammaKursa = (props) => {
                                 </div>
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Количество лекций</h4>
-                                    <span className="programma_block_description">16 практик</span>
+                                    <span className="programma_block_description">16 лекции</span>
                                 </div>
                                 <div className="programma_block_info_col">
                                     <h4 className="programma_block_title_h4">Количество практик</h4>
