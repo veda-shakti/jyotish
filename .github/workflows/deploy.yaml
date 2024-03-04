@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: workflow_dispatch
+on: [push]
 
 jobs:
   build:
@@ -52,6 +52,9 @@ jobs:
         if [ "${{ github.actor }}" = "AlexUner" ]; then
           echo "CUSTOM_MESSAGE_GOOD=🏆 @AlexUner, молодец!" >> $GITHUB_ENV
         fi
+        if [ "${{ github.actor }}" = "WarningNotError" ]; then
+        echo "CUSTOM_MESSAGE_GOOD=🏆 @eugenroot1, молодец!" >> $GITHUB_ENV
+        fi
         echo $CUSTOM_MESSAGE_GOOD
 
     - name: Send Telegram Notification on Failure build
@@ -101,11 +104,13 @@ jobs:
         user ${{ secrets.SFTP_USERNAME }} ${{ secrets.SFTP_PASSWORD }};
         lcd ./build;
 
-        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/test;
+        mirror --reverse --continue --verbose --parallel=10 . /home/devilaks/anastasiyashakti.com/jyotish;
 
         bye;
         "
-
+        
+    - name: Clear MODX Cache
+      run: curl https://jyotish.anastasiyashakti.com/clear-cache-script.php?key=${{ secrets.CACHE_SECRET_KEY }}
 
     - name: Set custom message bad
       run: |
@@ -115,7 +120,10 @@ jobs:
         if [ "${{ github.actor }}" = "AlexUner" ]; then
           echo "CUSTOM_MESSAGE_BAD=💩 @AlexUner, иди убирай какахи!" >> $GITHUB_ENV
         fi
-
+        if [ "${{ github.actor }}" = "WarningNotError" ]; then
+        echo "CUSTOM_MESSAGE_BAD=💩 @eugenroot1, иди убирай какахи!" >> $GITHUB_ENV
+        fi
+        echo $CUSTOM_MESSAGE_BAD
     - name: Set custom message good
       run: |
         if [ "${{ github.actor }}" = "IvanGudyushkin" ]; then
@@ -124,7 +132,10 @@ jobs:
         if [ "${{ github.actor }}" = "AlexUner" ]; then
           echo "CUSTOM_MESSAGE_GOOD=🏆 @AlexUner, молодец!" >> $GITHUB_ENV
         fi
-
+        if [ "${{ github.actor }}" = "WarningNotError" ]; then
+        echo "CUSTOM_MESSAGE_GOOD=🏆 @eugenroot1, молодец!" >> $GITHUB_ENV
+        fi
+        echo $CUSTOM_MESSAGE_GOOD
     - name: Send Telegram Notification on Deploy Success
       if: failure()
       uses: appleboy/telegram-action@master
