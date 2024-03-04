@@ -6,11 +6,15 @@ import emblem  from '../../assets/emblem.png'
 import '../../Styles/content.css'
 import Container from "../Container";
 import AdaptiveTag from "../Content/AdaptiveTag";
-import ModalContext from "../FormPay/ModalContext";
 import Buttonreg from "../../assets/Buttonreg";
 import ContentBlockVebinar from "../Content/ContentBlockVebinar";
+import ModalContext from "../modal/ModalContext1";
 export const Frame2 = () => {
-    const { setShowModal } = useContext(ModalContext);
+    const { setShowModal, setKursModal } = useContext(ModalContext);
+    const showkurs = () => {
+        setShowModal(true)
+        setKursModal(true)
+    }
     return (
         <div>
             <Container containerid="2">
@@ -101,7 +105,7 @@ export const Frame2 = () => {
                         className="frame2_block_p"
                     />}
                     button={<Buttonreg
-                        reg={() => setShowModal(true)}
+                        reg={showkurs}
                         translations={{
                             en: 'Приобрести запись',
                             ru: 'Принять участие',

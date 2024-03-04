@@ -1,0 +1,169 @@
+.content {
+  &.contentProgramma {
+    position: absolute;
+    margin: 0 105px;
+    left: 0px;
+    width: 916px;
+    font-family: "Futura PT", sans-serif;
+    height: 100%;
+    color: #E8F5FA;
+    .contentblock {
+      margin-top: 110px;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap:20px
+    }
+    .programma_title {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 70.4px;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      margin: 0 0 20px 0 ;
+      background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .programma_block {
+      border-radius: 20px;
+      background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.3s ease;
+      cursor: default;
+      font-size: 24px;
+      line-height: 110%;
+      width: 855px;
+      &.programma_mini {
+        width: 232px;
+      }
+      &_title{
+        font-family: 'Futura PT', sans-serif;
+        text-align: left;
+        font-size: 36px;
+        width: fit-content;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 44px */
+        margin: 0 0 10px 0;
+        background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &_h4{
+          background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 24px;
+          width: fit-content;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 110%; /* 26.4px */
+          margin: 0 0 10px 0;
+        }
+      }
+      &_description {
+        background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 24px;
+        width: fit-content;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 26.4px */
+        margin: 0 0 20px 0;
+      }
+      &_content{
+        font-size: 24px;
+        line-height: 110%;
+        text-align: left;
+        margin: 0;
+      }
+      &_column{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+      }
+      &_col1{
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+      }
+      &_col2{
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+      }
+      &_item{
+        font-size: 18px;
+        line-height: 110%;
+        &_lotus{
+          margin-right: 8px;
+          width: 23px;
+          height: 18px;
+        }
+      }
+      &_info{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 30px;
+        &_col{
+          width: 278px;
+        }
+      }
+      &_PS{
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 110%;
+
+      }
+      &_buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &_download{
+        font-size: 18px;
+        text-decoration: underline;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      &_kurs{
+        padding: 10px 27px;
+        background: linear-gradient(145.76deg, #F5D894 0.76%, #FFFFFF 0.77%, #DDC17E 20.15%, #FFFFFF 55.67%, #DDC17E 92.08%, #F1CE7D 104.37%);
+        font-size: 18px;
+        font-weight: 700;
+        color:#133272;
+        border-radius: 50px;
+        border: 2px solid  #CB8001;
+        font-family: "Futura PT", sans-serif;
+        transition-duration: 0.3s;
+        &:hover {
+          cursor: pointer;
+          scale: 1.05;
+          -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+          box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+
+        }
+      }
+      &_last{
+        margin-bottom: 120px;
+      }
+    }
+  }
+}

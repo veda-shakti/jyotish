@@ -1,5 +1,5 @@
 import React from 'react';
 
-const ModalContext = React.createContext();
+const ModalPayContext = React.createContext();
 
-export default ModalContext;
+export default ModalPayContext;

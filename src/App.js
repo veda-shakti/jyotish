@@ -2,11 +2,11 @@ import React, {useEffect, useRef, useState} from 'react';
 import * as Frames from "./components/Frames/frames";
 import BackgroundBox from "./components/background-box";
 import Meta from "./components/Meta";
-import ContactFormPay from "./components/FormPay/ContactFormPay";
-import ModalContext from "./components/FormPay/ModalContext";
+import ModalContext from "./components/modal/ModalContext1";
 import LanguageContext from "./components/LanguageContext";
 import Loader from './components/Loader';
 import imgBg from './assets/bg.webp'
+import Modal from "./components/modal/Modal";
 
 function App()
 {
@@ -14,11 +14,33 @@ function App()
     const [startFadeOut, setStartFadeOut] = useState(false);
     const [language, setLanguage] = useState('ru');
     const [showModal, setShowModal] = useState(false);
+    const [kursModal, setKursModal] = useState(false);
+    const [feedbackModal, setFeedbackModal] = useState(null);
     const [currentFrame, setCurrentFrame] = useState(null);
     const [animating, setAnimating] = useState(false);
     const [currentFrameIndex=0, setCurrentFrameIndex] = useState(0);
     const [bgtypebg, setBgtypebg] = useState('bg-img-1');
     const isSwiping = useRef(false);
+
+    async function switchFrames(nextFrame, thisframe, direction) {
+        const currentTranslate = direction === 'up' ? '-100vh' : '100vh';
+        const nextInitialTranslate = direction === 'up' ? '100vh' : '-100vh';
+
+        nextFrame.style.transform = `translateY(${nextInitialTranslate})`;
+        nextFrame.style.opacity = '1';
+        nextFrame.style.pointerEvents = 'auto';
+        thisframe.style.opacity = '0';
+        thisframe.style.pointerEvents = 'none';
+
+        await new Promise(resolve => requestAnimationFrame(resolve));
+
+        nextFrame.style.transform = 'translateY(0vh)';
+        thisframe.style.transform = `translateY(${currentTranslate})`;
+
+        await new Promise(resolve => {
+            nextFrame.addEventListener('transitionend', resolve, {once: true});
+        });
+    }
 
 
     useEffect(() => {
@@ -55,25 +77,7 @@ function App()
             handleScroll(direction);
         }
 
-        async function switchFrames(nextFrame, thisframe, direction) {
-            const currentTranslate = direction === 'up' ? '-100vh' : '100vh';
-            const nextInitialTranslate = direction === 'up' ? '100vh' : '-100vh';
 
-            nextFrame.style.transform = `translateY(${nextInitialTranslate})`;
-            nextFrame.style.opacity = '1';
-            nextFrame.style.pointerEvents = 'auto';
-            thisframe.style.opacity = '0';
-            thisframe.style.pointerEvents = 'none';
-
-            await new Promise(resolve => requestAnimationFrame(resolve));
-
-            nextFrame.style.transform = 'translateY(0vh)';
-            thisframe.style.transform = `translateY(${currentTranslate})`;
-
-            await new Promise(resolve => {
-                nextFrame.addEventListener('transitionend', resolve, {once: true});
-            });
-        }
 
         function switchFrame(direction) 
         {
@@ -270,6 +274,7 @@ function App()
 
             if (lastframe)
             {
+                setBgtypebg ('')
                 document.getElementById('box1').classList.add('fullwidthbg');
                 switchFrames(document.getElementById('frame4'), document.getElementById('frame5'), direction);
 
@@ -318,7 +323,7 @@ function App()
                 <Loader className={startFadeOut ? 'fadeOutUp' : ''} />
             )}
             <LanguageContext.Provider value={{ language, setLanguage }}>
-            <ModalContext.Provider value={{ showModal, setShowModal }}>
+            <ModalContext.Provider value={{ showModal, setShowModal, kursModal, setKursModal, feedbackModal, setFeedbackModal}}>
                 <Meta/>
                 <BackgroundBox bg="cosmos" bgtype={bgtypebg} bgimg={imgBg}>
                     {/*<select style={{ position: 'absolute', zIndex: 9999 }} onChange={(event) => setLanguage(event.target.value)}>*/}
@@ -335,7 +340,7 @@ function App()
                     />
                     <Frames.Frame5/>
                 </BackgroundBox>
-                <ContactFormPay />
+                <Modal/>
             </ModalContext.Provider>
             </LanguageContext.Provider>
         </div>

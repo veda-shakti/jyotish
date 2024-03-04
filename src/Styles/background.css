@@ -22,6 +22,7 @@
     z-index: 1;
     top: 0;
     left: 0;
+    pointer-events: none;
 }
 
 .fullwidthbg {
@@ -52,8 +53,9 @@ footer {
     height: 200px;
     align-items: flex-end;
     justify-content: space-between;
-    color: #9D5B36;
-    background: linear-gradient(180deg, #FFF 0%, #F4FCFF 42.19%, #FFF9ED 79.17%);
+    color: #FEF4A4;
+    background: url("../assets/footer.webp") no-repeat center center;
+    background-size: cover; /* Сохраняет пропорции, покрывая весь элемент */
     -webkit-transform: translateY(100vh);
     -ms-transform: translateY(100vh);
     transform: translateY(100vh);
@@ -70,7 +72,7 @@ footer .column.column2 {
     justify-content: flex-end;
 }
 footer a {
-        color: #9D5B36;
+        color: #FEF4A4;
         font-size: 24px;
         font-family: "Futura PT", sans-serif;
         line-height: 26.4px;
@@ -124,6 +126,7 @@ footer a {
     border-radius: 50%;
     opacity: 0.5;
     z-index: 1;
+    display: unset;
 }
 .opening.right2.bg-img-1,
 .opening.left2.bg-img-1,
@@ -135,8 +138,14 @@ footer a {
 .opening.right1,
 .closing.right2,
 .closing.right1,
+.opening.left2,
+.opening.left1,
+.closing.left2,
+.closing.left1,
 .opening.right2.bg-img-3,
-.closing.right2.bg-img-3{
+.closing.right2.bg-img-3,
+.opening.left2.bg-img-3,
+.closing.left2.bg-img-3{
     display: none;
 }
 #bg-image-2.bg-img-1 {
@@ -230,6 +239,7 @@ footer a {
     bottom: -131px;
     width: 753px;
     height: 753px;
+    display: unset;
 }
 #bg-image-2.bg-img-3 {
     position: absolute;
@@ -272,6 +282,7 @@ footer a {
     right: -57px;
     width: 680px;
     height: 775px;
+    display: unset;
 }
 #bg-image-4.bg-img-4 {
     position: absolute;
@@ -293,6 +304,7 @@ footer a {
     bottom: -338px;
     width: 591px;
     height: 872px;
+    display: unset;
 }
 #bg-image-3.bg-img-5 {
     position: absolute;
@@ -314,6 +326,7 @@ footer a {
     right: -70px;
     width: 572px;
     height: 572px;
+    display: unset;
 }
 
 #bg-image-4.bg-img-5 {
@@ -335,6 +348,7 @@ footer a {
     left: -58px;
     width: 515px;
     height: 554px;
+    display: unset;
 }
 
 
@@ -344,23 +358,27 @@ footer a {
 .closing.left2
 {
     animation: close2 0.8s forwards;
+    pointer-events: none;
 }
 .opening.left1,
 .opening.left2
 {
     animation: open1 0.8s forwards;
+    pointer-events: none;
 }
 
 .closing.right1,
 .closing.right2
 {
     animation: close 0.8s forwards;
+    pointer-events: none;
 }
 
 .opening.right1,
 .opening.right2
 {
     animation: open2 0.8s forwards;
+    pointer-events: none;
 }
 
 @keyframes scale{

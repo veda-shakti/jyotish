@@ -1,0 +1,178 @@
+@charset "UTF-8";
+.modal_pay_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: "Futura PT", sans-serif;
+  color: #E8F5FA;
+  background: linear-gradient(180deg, #000000 0%, #000A2E 44.5%, #3B519E 100%);
+  z-index: 1999;
+  opacity: 0;
+}
+.modal_pay_container.show {
+  opacity: 1;
+}
+
+.close_full_pay {
+  position: absolute;
+  cursor: pointer;
+  text-align: right;
+  top: 70px; /* Позиционирование от верхнего края окна браузера */
+  left: 50%; /* Позиционирование от левого края окна браузера */
+  transform: translateX(-50%);
+  z-index: 2005;
+  width: 60px;
+  height: 60px;
+  transition: 0.2s ease-in-out;
+}
+.close_full_pay:hover {
+  scale: 1.05;
+}
+
+.modal_pay_bg_effect {
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  -moz-user-select: none; /* Для Firefox */
+  -webkit-user-select: none; /* Для Chrome, Safari и Opera */
+  -ms-user-select: none; /* Для Internet Explorer/Edge */
+  position: fixed;
+  z-index: 1999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.modal_pay_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.window_modal_pay {
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  z-index: 3000;
+  background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
+}
+.window_modal_pay h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 0 0 25px 0;
+  opacity: 1;
+  background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.window_modal_pay p {
+  color: #E8F5FA;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  opacity: 1;
+}
+.window_modal_pay form {
+  margin-top: 5px;
+  width: 600px;
+  height: 420px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  /* Стили для иконки, которая показывается, когда радио кнопка выбрана */
+  /* Стилизация иконки, когда радио кнопка в состоянии :checked */
+  /* Стили для текста рядом с радио кнопкой */
+  /* Убираем последний margin справа для последнего элемента label */
+}
+.window_modal_pay form input[type=radio] {
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0 10px 0 0;
+  width: 20px; /* Установите ширину радио кнопок */
+  height: 20px; /* Установите высоту радио кнопок */
+  border: 2px solid #FFECBE; /* Установите толщину и цвет рамки */
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+.window_modal_pay form input[type=radio]::before {
+  content: "";
+  width: 12px; /* Установите размер внутреннего круга радио кнопки */
+  height: 12px; /* Установите размер внутреннего круга радио кнопки */
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-image: linear-gradient(133.02deg, #160D0B -12.75%, #CB8001 19.2%, #FCDA84 38.37%, #FEF4A4 50.51%, #FCDA84 62.01%, #CB8001 79.91%, #180F0D 114.41%);
+}
+.window_modal_pay form input[type=radio]:checked::before {
+  transform: scale(1);
+}
+.window_modal_pay form label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px; /* Установите размер текста */
+  line-height: 1.1; /* Установите высоту строки текста */
+  margin-right: 20px; /* Расстояние между радио кнопками */
+}
+.window_modal_pay form label:last-child {
+  margin-right: 0;
+}
+.window_modal_pay form .button-submit {
+  padding: 20px 40px;
+  background: linear-gradient(133.02deg, #160D0B -12.75%, #CB8001 19.2%, #FCDA84 38.37%, #FEF4A4 50.51%, #FCDA84 62.01%, #CB8001 79.91%, #180F0D 114.41%);
+  color: #133272;
+  font-size: 20px;
+  line-height: 96%;
+  width: 330px;
+  border: none;
+  border-radius: 80px;
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+  font-weight: 700;
+  opacity: 1;
+}
+.window_modal_pay form .button-submit:hover {
+  scale: 1.05;
+  -webkit-box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+  box-shadow: rgba(241, 236, 229, 0.3960784314) 0px 0px 10px 0px;
+}
+.window_modal_pay form .modal_pay_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+.window_modal_pay form .modal_pay_request {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 10px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=ModalPay.css.map */

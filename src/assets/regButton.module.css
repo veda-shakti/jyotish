@@ -6,7 +6,6 @@
     border: none;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-
     z-index: 2;
     padding: 0;
     cursor: pointer ;
@@ -26,6 +25,10 @@
     -webkit-user-select: none; /* Для Chrome, Safari и Opera */
     -ms-user-select: none; /* Для Internet Explorer/Edge */
 }
+
+.image.silver {
+    filter:grayscale(100%);
+}
 .text {
     position: absolute;
     color: #133272;
@@ -37,9 +40,9 @@
     line-height: 110%; /* 19.2px */
     z-index: 3;
     top:56px;
-    width:140px;
+    width:110px;
     height: 40px;
-    left: 5px;
+    left:20px;
     text-shadow: -3px 3px 12px 3px #593C0F;
     user-select: none;
     -moz-user-select: none; /* Для Firefox */

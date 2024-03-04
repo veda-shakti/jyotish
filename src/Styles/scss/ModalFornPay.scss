@@ -1,12 +1,12 @@
 
 .modal {
-  position: fixed; /* Позиционирование фиксировано, чтобы оно всегда оставалось на месте, даже при прокрутке страницы */
-  top: 0; /* Отступ сверху равен 0, чтобы оно начиналось с верхнего края экрана */
-  left: 0; /* Отступ слева равен 0, чтобы оно начиналось с левого края экрана */
-  width: 100vw; /* Ширина равна 100%, чтобы оно занимало всю ширину экрана */
-  height: 100vh; /* Высота равна 100%, чтобы оно занимало всю высоту экрана */
-  overflow: hidden; /* Если содержимое модального окна превышает его размеры, появляется полоса прокрутки */
-  background-color: rgba(0,0,0,0.4); /* Полупрозрачный черный фон */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
   color: #713513;
   z-index: 9999;
   opacity: 0;
@@ -17,15 +17,14 @@
     opacity: 1;
   }
   .modal-content {
-    margin: auto; /* 15% от верхнего края экрана до модального окна и автоматические отступы по бокам */
-    position: fixed; /* Позиционирование относительно окна браузера */
-    top: 50%; /* Позиционирование от верхнего края окна браузера */
-    left: 50%; /* Позиционирование от левого края окна браузера */
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px;
-    width: 900px; /* Ширина модального окна равна 80% */
+    width: 900px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    //background-color: #326A4C;
     height: 600px;
     display: flex;
     align-items: center;
@@ -62,7 +61,7 @@
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
-      line-height: 110%; /* 26.4px */
+      line-height: 110%;
     }
 
     .showprivacy {

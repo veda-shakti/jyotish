@@ -43,52 +43,45 @@ const Contentinline = (props) => {
                 <div className="contentblock horizonral">
                     <div className="frame5_block inlineframe">
                         <h4 className="frame5_block_h4">
-                            Пункты назначения
-                            «SPA для души»:
+                            Пункты назначения курса Джйотиш:
                         </h4>
                             <div className="scrolldiv horizontal" id={`scroll${props.contentid}`}>
                             <div className="inline_listblock">
 
                                 <div className="inline_block">
                                     <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Расширение Финансового Потока</h5>
-                                    <p className="inline_p">Процветание и прирост финансов за счёт подключения к источникам благосостояния</p>
+                                    <h5 className="inline_h5">Улучшение всех жизненных сфер уже во время курса</h5>
+                                    <p className="inline_p">Изучая планеты, вы гармонизируете их в своем гороскопе, что в свою очередь откроет перед вами новые благоприятные возможности, расширит удачу и процветание</p>
                                 </div>
 
                                 <div className="inline_block">
                                     <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Улучшение Жизненных Сфер</h5>
-                                    <p className="inline_p">Планируйте и реализуйте действия для карьерного прорыва и инвестиций.</p>
+                                    <h5 className="inline_h5">Улучшение отношений с мужем/женой и детьми</h5>
+                                    <p className="inline_p">Зная все ваши «планеты преткновения», познавая мудрость Вед через изучение джйотиш, вы сможете свести к минимуму все конфликты и недопонимания</p>
                                 </div>
 
                                 <div className="inline_block">
                                     <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Гармонизация Чакр</h5>
-                                    <p className="inline_p">Освобождение потенциала Свадхистаны (заблокирована у большинства, особенно у женщин) и Мантипуры для улучшения эмоционального состояния и финансового благополучия</p>
+                                    <h5 className="inline_h5">Улучшение эмоционального и гормонального здоровья</h5>
+                                    <p className="inline_p">Изучение джйотиш улучшит вашу Луну в гороскопе и превратит ваши перепады настроения, разбитость, страхи, тревожность, излишнюю впечатлительность и сентиментальность в спокойствие, баланс, ясность, энергию, а также усилит вашу интуицию</p>
                                 </div>
 
                                 <div className="inline_block">
                                     <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Управление Ресурсами</h5>
-                                    <p className="inline_p">С конца весны не выгорать от усталости на работе для большего заработка, идти структурно, ресурсно, накапливать деньги и правильно их распределять</p>
+                                    <h5 className="inline_h5">Духовное самосовершенствование</h5>
+                                    <p className="inline_p">Познавая законы мироздания, постигая природу Бога и души, а также циклы рождений и смертей, вы продвинетесь к осмыслению и осуществлению главной миссии человеческой жизни</p>
                                 </div>
 
                                 <div className="inline_block">
                                     <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Коммуникация с Влиятельными Людьми</h5>
-                                    <p className="inline_p">Улучшенный Юпитер обеспечивает возможности для взаимодействия с влиятельными личностями и расширения деятельности</p>
+                                    <h5 className="inline_h5">Выход за рамки предопределенностей судьбы</h5>
+                                    <p className="inline_p">На курсе вы получите навык не только чтения гороскопа, но и смягчения негативных предопределенностей в судьбе, усиления положительных событий в жизни</p>
                                 </div>
 
                                 <div className="inline_block">
                                     <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Духовное Наследие</h5>
-                                    <p className="inline_p">Передача потомкам знаний о Боге, духовных знаний, что способствует развитию благочестия в семье</p>
-                                </div>
-
-                                <div className="inline_block">
-                                    <img src={point} alt="" className="inline_img"/>
-                                    <h5 className="inline_h5">Улучшение судьбы</h5>
-                                    <p className="inline_p">Фокусировка на истинных ценностях, благодаря чему меняется в лучшую сторону настоящее, будущее в этом и следующем воплощении</p>
+                                    <h5 className="inline_h5">Профессия с правом консультировать</h5>
+                                    <p className="inline_p">Получив обширный багаж глубоких знаний, вы обретёте дополнительный инструмент или новую профессию уже к концу курса</p>
                                 </div>
                             </div>
                         </div>

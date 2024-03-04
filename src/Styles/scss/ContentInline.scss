@@ -11,7 +11,7 @@
     width :1020px;
     height: 530px;
     &.horizonral {
-      width:3610px
+      width:3200px
     }
   }
 
@@ -32,7 +32,7 @@
         height: 210px;
         position: absolute;
         left: 0;
-        top: 250px;
+        top: 230px;
         overflow-x: scroll;
         pointer-events: none;
         transition:  0.3s ease-in-out;
@@ -50,12 +50,11 @@
     .frame5_block_h4 {
       text-align: left;
       font-family: 'Futura PT', sans-serif;
-      font-size: 48px;
-      width: 500px;
+      font-size: 36px;
       font-style: normal;
       font-weight: 700;
       line-height: 110%; /* 38.088px */
-      margin: 113px 0 30px 120px;
+      margin: 160px 0 30px 120px;
       background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -118,11 +117,11 @@
       }
 
       .inline_p {
-        font-size: 24px;
+        font-size: 18px;
         width: 400px;
         margin: 0;
         padding-left: 75px;
-        line-height: 26.4px;
+        line-height: 110%;
       }
     }
   }

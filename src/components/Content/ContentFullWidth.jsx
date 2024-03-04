@@ -1,13 +1,17 @@
 import React, {useContext} from 'react';
 import '../../Styles/ContentFullWidth.css';
 import '../../Styles/content.css'
-import ModalContext from "../FormPay/ModalContext";
 import img1 from '../../assets/bg-fullwidth-pic-1.webp'
 import img2 from '../../assets/bg-fullwidth-pic-2.webp'
 import img3 from '../../assets/bg-fullwidth-pic-3.svg'
 import Buttonreg from "../../assets/Buttonreg";
+import ModalContext from "../modal/ModalContext1";
 const ContentFullWidth = (props) => {
-    const { setShowModal } = useContext(ModalContext);
+    const { setShowModal, setKursModal } = useContext(ModalContext);
+    const showkurs = () => {
+        setShowModal(true)
+        setKursModal(true)
+    }
     return (
         <div className="absolute">
 
@@ -94,7 +98,7 @@ const ContentFullWidth = (props) => {
                                     </div>
                                     <div className="reg">
                                     <Buttonreg
-                                        reg={() => setShowModal(true)}
+                                        reg={showkurs}
                                         translations={{
                                             en: 'Приобрести запись',
                                             ru: 'Принять участие',
