@@ -106,7 +106,6 @@ const ContentLastBlock = (props) => {
                             или Внести другую сумму
                         </p>
                     </div>
-
                 </div>
             </div>
         </div>
