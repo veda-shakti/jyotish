@@ -7,19 +7,26 @@ import ModalPay from "../modal/ModalPay";
 const ContentLastBlock = (props) => {
     const [showModal, setShowModal] = useState(false)
     const [renderChoise, setRenderChoise] = useState(false)
+    const [step1, setStep1] = useState(false)
 
+    const openpayStep1 = () => {
+        setShowModal(true)
+        setStep1(true)
+    }
     const openpay = () => {
         setShowModal(true)
+        setStep1(false)
     }
     const openpayChoise = () => {
         setShowModal(true)
         setRenderChoise(true)
+        setStep1(false)
     }
 
     return (
         <div className="absolute">
             <div className="content lastblock" id={`content${props.contentid}`}>
-                <ModalPay showModal={showModal} setShowModal={setShowModal} renderChoise={renderChoise}/>
+                <ModalPay showModal={showModal} setShowModal={setShowModal} renderChoise={renderChoise} step1={step1}/>
                 <div className="scrolldiv"></div>
                 <div className="contentblock"></div>
                 <div className="lastblock_content">
@@ -52,7 +59,7 @@ const ContentLastBlock = (props) => {
                         <div className="reg">
                             <Buttonreg
                                 silver={true}
-                                reg={openpay}
+                                reg={openpayStep1}
                                 translations={{
                                     en: 'Приобрести запись',
                                     ru: 'Приобрести по подписке',

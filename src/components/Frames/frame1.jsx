@@ -8,15 +8,7 @@ export const Frame1 = () => {
             <ContainerIntro>
                 <ContentIntro
                     contentid="1"
-                    contentvalue= {<AdaptiveTag
-                        tag="span"
-                        translations={{
-                            en: 'Make the right decisions at the right time!',
-                            ru: 'Получите проверенный веками инструмент познания себя и законов жизни, а также выхода за рамки гороскопа',
-                            uk: 'Приймайте правильні рішення в правильний час!',
-                        }}
-                        className=""
-                    />}
+                    contentvalue="Получите проверенный веками инструмент познания себя и законов жизни, а также выхода за рамки гороскопа"
                 />
             </ContainerIntro>
 

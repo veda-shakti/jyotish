@@ -21,7 +21,7 @@ const BackgroundBox = (props) => {
     const [bgImage1, setBgImage1] = useState(null);
     const [bgImage2, setBgImage2] = useState(null);
     const openInstagram = () => {
-        window.open("https://www.instagram.com/p/CWn2xYYscg_/", "_blank");
+        window.open("https://www.instagram.com/anastasiyashakti", "_blank");
     };
     const openTelegram = () => {
         window.open("https://t.me/anastasiyashakti_astrolog", "_blank");

@@ -3,7 +3,7 @@ import bgimg from "../../assets/bg.webp";
 import button from "../../assets/christ_button.svg";
 import '../../Styles/ModalPay.css'
 
-const ModalPay = ({showModal, setShowModal, renderChoise}) => {
+const ModalPay = ({showModal, setShowModal, renderChoise, step1}) => {
 
     const [renderModal, setRenderModal] = useState(false);
     const [showClass, setShowClass] = useState(false);
@@ -29,7 +29,8 @@ const ModalPay = ({showModal, setShowModal, renderChoise}) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        window.open('https://pay.fondy.eu/s/5cN5EO9El', '_blank');
+        if (step1) window.open('https://pay.fondy.eu/s/IttlkYeVcS2', '_blank');
+        else window.open('https://pay.fondy.eu/s/blxdab3OtNJDPICj', '_blank')
     }
 
     return (
