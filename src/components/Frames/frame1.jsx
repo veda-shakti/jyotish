@@ -1,7 +1,6 @@
 import ContainerIntro from "../ContainerIntro";
 import ContentIntro from "../Content/ContentIntro";
 import React from "react";
-import AdaptiveTag from "../Content/AdaptiveTag";
 
 export const Frame1 = () => {
     return (
