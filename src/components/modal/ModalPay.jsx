@@ -1,13 +1,39 @@
 import React, {useEffect, useState} from 'react';
-import bgimg from "../../assets/bg.webp";
 import button from "../../assets/christ_button.svg";
 import '../../Styles/ModalPay.css'
+import imgBg from "../../assets/bg.webp";
+import imgBg2 from "../../assets/bg-phone.webp";
+import imgBg1 from "../../assets/bg-tablet.webp";
 
 const ModalPay = ({showModal, setShowModal, renderChoise, step1}) => {
 
     const [renderModal, setRenderModal] = useState(false);
     const [showClass, setShowClass] = useState(false);
     const [selectedAmount, setSelectedAmount] = useState('22500'); // Значение по умолчанию
+    const [currentBg, setCurrentBg] = useState(imgBg);
+
+    useEffect(() => {
+        // Функция для определения и установки текущего фонового изображения
+        const updateBackground = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 560) {
+                setCurrentBg(imgBg2); // для телефонов
+            } else if (screenWidth >= 560 && screenWidth < 960) {
+                setCurrentBg(imgBg1); // для планшетов
+            } else {
+                setCurrentBg(imgBg); // для десктопов
+            }
+        };
+
+        // Вызов функции при первой загрузке компонента
+        updateBackground();
+
+        // Добавление обработчика события изменения размера окна
+        window.addEventListener('resize', updateBackground);
+
+        // Удаление обработчика события при размонтировании компонента
+        return () => window.removeEventListener('resize', updateBackground);
+    }, []); // Пустой массив зависимостей означает, что эффект запустится один раз при монтировании
 
     useEffect(() => {
         let timeoutId;
@@ -37,7 +63,7 @@ const ModalPay = ({showModal, setShowModal, renderChoise, step1}) => {
         <>
             {renderModal && (
                 <div className={`modal_pay_container ${showClass ? 'show' : 'hide'}`}>
-                    <img src={bgimg} className="modal_pay_bg_effect" alt={"backgroundeffect"}/>
+                    <img src={currentBg} className="modal_pay_bg_effect" alt={"backgroundeffect"}/>
                     <span className="close_full_pay" onClick={() => setShowModal(false)}><img alt="close" src={button}/></span>
                     <div className="window_modal_pay">
                         <form id="contactForm" onSubmit={handleSubmit}>

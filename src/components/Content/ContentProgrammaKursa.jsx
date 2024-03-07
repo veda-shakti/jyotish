@@ -25,7 +25,7 @@ const ContentProgrammaKursa = (props) => {
                             <h3 className="programma_block_title">144 часа</h3>
                             <p className="programma_block_content">живых теоретических лекций без воды</p>
                         </div>
-                        <div className="programma_block programma_mini">
+                        <div className="programma_block programma_mini last-child">
                             <h3 className="programma_block_title">72 часа</h3>
                             <p className="programma_block_content">практики <u>на своих</u> натальных картах</p>
                         </div>

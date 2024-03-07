@@ -103,11 +103,14 @@ $transition-duration: 0.3s;
     text-align: center;
     line-height: 110%;
     margin: 0;
+    left:-10px;
 
     .frame13_block {
       width: 730px;
       height: 100%;
       margin: 0 85px;
+
+
 
       .containerforframe13{
         width: 100%;
@@ -129,7 +132,7 @@ $transition-duration: 0.3s;
     }
     .frame13_content_block {
       border-radius: 17px;
-      background: linear-gradient(37deg, rgba(251, 245, 231, 0.80) -13.83%, rgba(255, 250, 239, 0.80) 50.49%, rgba(241, 233, 215, 0.80) 86.98%, rgba(202, 189, 163, 0.80) 109.35%);
+      background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
       margin-bottom: 20px;
       padding: 25px;
       width: auto;
@@ -138,13 +141,27 @@ $transition-duration: 0.3s;
 
       &_name {
         margin: 0;
-        margin-bottom: 10px;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 700;
+      }
+      &_readmore{
+        font-size: 18px;
+        width: fit-content;
+        border-bottom: 1px solid #E8F5FA;; /* Толщина и цвет линии */
+        padding-bottom: 0; /* Отступ от текста до линии */
+
       }
       &_p {
         margin: 0;
+        font-size: 18px;
+        line-height: 110%;
       }
+    }
+    &_h2 {
+      font-size: 36px;
+      margin-top: 70px;
+      margin-bottom: 30px;
+      text-align: center;
     }
     .frame13_content {
       display: flex;
@@ -152,16 +169,6 @@ $transition-duration: 0.3s;
       justify-content: space-between;
       padding-bottom: 90px;
 
-      &_h2 {
-        line-height: 110%;
-        font-size: 24px;
-        font-weight: 700;
-        margin-top: 50px;
-        margin-bottom: 52px;
-        height: 40px;
-        width: 720px;
-        text-align: center;
-      }
     }
   }
 }
@@ -204,22 +211,27 @@ $transition-duration: 0.3s;
     }
     .frame13_content_block {
       border-radius: 17px;
-      background: linear-gradient(37deg, rgba(251, 245, 231, 0.80) -13.83%, rgba(255, 250, 239, 0.80) 50.49%, rgba(241, 233, 215, 0.80) 86.98%, rgba(202, 189, 163, 0.80) 109.35%);
       margin-bottom: 15px;
       padding: 25px;
       width: auto;
       height: fit-content;
       text-align: left;
+      gap: 10px;
 
       &_name {
-        margin: 0;
-        margin-bottom: 10px;
         font-size: 24px;
         font-weight: 700;
       }
 
       &_p {
-        margin: 0;
+        font-size: 16px;
+        margin: 0 0 5px 0;
+      }
+      &_readmore {
+        font-size: 18px;
+        width: fit-content;
+        border-bottom: 1px solid #E8F5FA;; /* Толщина и цвет линии */
+        padding-bottom: 0; /* Отступ от текста до линии */
       }
     }
 
@@ -281,7 +293,6 @@ $transition-duration: 0.3s;
 
     .frame13_content_block {
       border-radius: 17px;
-      background: linear-gradient(37deg, rgba(251, 245, 231, 0.80) -13.83%, rgba(255, 250, 239, 0.80) 50.49%, rgba(241, 233, 215, 0.80) 86.98%, rgba(202, 189, 163, 0.80) 109.35%);
       margin-bottom: 15px;
       padding: 20px;
       width: auto;
@@ -290,8 +301,8 @@ $transition-duration: 0.3s;
 
       &_name {
         margin: 0;
-        margin-bottom: 5px;
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 110%;
         font-weight: 700;
       }
 
@@ -300,6 +311,12 @@ $transition-duration: 0.3s;
         font-size: 16px;
         line-height: 110%;
         font-family: "Futura PT", sans-serif;
+      }
+      &_readmore {
+        font-size: 16px;
+        width: fit-content;
+        border-bottom: 1px solid #E8F5FA;; /* Толщина и цвет линии */
+        padding-bottom: 0; /* Отступ от текста до линии */
       }
     }
 

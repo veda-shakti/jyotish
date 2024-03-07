@@ -6,6 +6,8 @@ import ModalContext from "./components/modal/ModalContext1";
 import LanguageContext from "./components/LanguageContext";
 import Loader from './components/Loader';
 import imgBg from './assets/bg.webp'
+import imgBg1 from './assets/bg-tablet.webp'
+import imgBg2 from './assets/bg-phone.webp'
 import Modal from "./components/modal/Modal";
 
 function App()
@@ -21,6 +23,30 @@ function App()
     const [currentFrameIndex=0, setCurrentFrameIndex] = useState(0);
     const [bgtypebg, setBgtypebg] = useState('bg-img-1');
     const isSwiping = useRef(false);
+    const [currentBg, setCurrentBg] = useState(imgBg);
+
+    useEffect(() => {
+        // Функция для определения и установки текущего фонового изображения
+        const updateBackground = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 560) {
+                setCurrentBg(imgBg2); // для телефонов
+            } else if (screenWidth >= 560 && screenWidth < 960) {
+                setCurrentBg(imgBg1); // для планшетов
+            } else {
+                setCurrentBg(imgBg); // для десктопов
+            }
+        };
+
+        // Вызов функции при первой загрузке компонента
+        updateBackground();
+
+        // Добавление обработчика события изменения размера окна
+        window.addEventListener('resize', updateBackground);
+
+        // Удаление обработчика события при размонтировании компонента
+        return () => window.removeEventListener('resize', updateBackground);
+    }, []); // Пустой массив зависимостей означает, что эффект запустится один раз при монтировании
 
     async function switchFrames(nextFrame, thisframe, direction) {
         const currentTranslate = direction === 'up' ? '-100vh' : '100vh';
@@ -41,6 +67,7 @@ function App()
             nextFrame.addEventListener('transitionend', resolve, {once: true});
         });
     }
+
 
 
     useEffect(() => {
@@ -325,7 +352,7 @@ function App()
             <LanguageContext.Provider value={{ language, setLanguage }}>
             <ModalContext.Provider value={{ showModal, setShowModal, kursModal, setKursModal, feedbackModal, setFeedbackModal}}>
                 <Meta/>
-                <BackgroundBox bg="cosmos" bgtype={bgtypebg} bgimg={imgBg}>
+                <BackgroundBox bg="cosmos" bgtype={bgtypebg} bgimg={currentBg}>
                     {/*<select style={{ position: 'absolute', zIndex: 9999 }} onChange={(event) => setLanguage(event.target.value)}>*/}
                     {/*    <option value="ru">Русский</option>*/}
                     {/*    <option value="en">English</option>*/}

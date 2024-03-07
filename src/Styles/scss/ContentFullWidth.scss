@@ -372,7 +372,7 @@ $border-color: #DDC299;
   #bg-fullwidth-image-2 {
     position: absolute;
     right: -217px;
-    top: 1100px;
+    top: 1500px;
     width: 860px;
     height: 860px;
     animation: scale 14s infinite linear;
@@ -408,16 +408,16 @@ $border-color: #DDC299;
       }
 
       p {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
 
     &_row2 {
       display: flex;
       justify-content: space-between;
-      flex-direction: row;
+      flex-direction: column;
       &_block {
-        max-width: 295px;
+        max-width: 670px;
         padding: 30px;
         border-radius: 25px;
         margin-bottom: 20px;
@@ -425,17 +425,57 @@ $border-color: #DDC299;
 
         h2 {
           text-align: center;
-          width: 295px;
+          width: auto;
           margin-right: auto;
           margin-left: auto;
           font-size: 24px;
+          margin-bottom: 10px;
+        }
+        p{
+          margin:0;
+          font-size: 18px;
+        }
+        &.golden {
+          background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
+          h2{
+            text-align: center;
+            width: 560px;
+            margin: 0 auto 5px auto ;
+            background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+            background-clip: text;
+            font-size: 36px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          h3 {
+            text-align: center;
+            width: fit-content;
+            margin: 0 auto;
+            background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+            background-clip: text;
+            font-size: 24px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 110%;
+            text-align: left;
+            margin:10px 0 0 0 ;
+          }
+          h5{
+            color:$text-dark;
+          }
         }
 
         h5{
           font-size: 18px;
-          margin: 0 auto;
-          width: fit-content;
-          min-height: fit-content;
+          margin: 0 0 15px 0;
+          width: unset;
+          min-height: unset;
+          align-items: center;
+
         }
 
         &_h2, &_ul, &_li, &_li_h5 {
@@ -453,60 +493,37 @@ $border-color: #DDC299;
 
       &_ul {
         list-style: none;
-        padding-left:42px;
-
+        padding-left: 37px;
       }
+
       &_li {
         position: relative;
-        margin-top: 57px;
-        margin-bottom: 0;
-        width: 295px;
-        padding-left: 0;
-        text-align: center;
-        left: -42px;
-        margin-left: auto;
-        margin-right:auto ;
 
         &::before {
           content: '';
           background: url(../assets/lotos.svg) no-repeat;
+          background-size: contain;
           display: block;
           position: absolute;
-          width: 42px;
-          height: 42px;
-          background-size: cover;
-          margin-bottom: 20px;
-          top:-42px;
-          right: auto;
-          left: 130px;
+          width: 27px;
+          height: 27px;
+          left: -37px;
         }
-        }
-        &_block:last-child {
-          li::before {
-            background: url(../assets/sun-notebook.svg) no-repeat;
-            width: 42px;
-            height: 42px;
-            top:-42px;
-          }
-        }
-
+      }
     }
-
       &_row3 {
         margin-top: 0;
         display: flex;
         position: relative;
-
         .reg {
           position: relative;
-          margin: 55px auto 0 auto ;
+          margin: 25px auto 0 auto ;
           font-family: "Futura PT", sans-serif;
           bottom: 0;
           width: 100px;
           height: 100px;
           border-radius: 80px;
         }
-
         &_container {
           display: flex;
           flex-wrap: wrap;
@@ -517,6 +534,26 @@ $border-color: #DDC299;
           display: flex;
           margin-right: 20px;
           margin-bottom: 20px;
+          &_full{
+            max-width: 100%;
+            padding: 35px;
+            margin-bottom: 30px;
+            width: 100%;
+            color:$first-color;
+            margin-top: 30px;
+            border-radius: 15px;
+            background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
+            &_h3
+            {
+              text-align: center;
+              margin: 0 auto 0 auto ;
+              background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+              background-clip: text;
+              font-size: 24px;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
 
           &:nth-child(2n) {
             margin-right: 0;
@@ -528,12 +565,12 @@ $border-color: #DDC299;
           }
 
           &_h5 {
-            font-size: 36px;
+            font-size: 24px;
             margin: 0;
           }
 
           &_p {
-            font-size: 24px;
+            font-size: 18px;
             width: 300px;
             margin: 0;
           }
@@ -562,7 +599,7 @@ $border-color: #DDC299;
   #bg-fullwidth-image-2 {
     position: absolute;
     right: -327px;
-    top: 1800px;
+    top: 1300px;
     width: 817px;
     height: 817px;
     animation: scale 14s infinite linear;
@@ -592,9 +629,6 @@ $border-color: #DDC299;
 
   }
 
-  .fullwidthcontent {
-    height: auto;
-  }
 
   .frame8_block {
     width: calc(100% - 100px);
@@ -619,7 +653,7 @@ $border-color: #DDC299;
       }
 
       p {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
         text-align: center;
       }
@@ -633,25 +667,32 @@ $border-color: #DDC299;
       &_block {
         max-width: 100%;
         padding: 35px;
-        color:$first-color;
-        background: linear-gradient(37deg, rgba(251, 245, 231, 0.80) -13.83%, rgba(255, 250, 239, 0.80) 50.49%, rgba(241, 233, 215, 0.80) 86.98%, rgba(202, 189, 163, 0.80) 109.35%);
-        width: 290px;
-        margin: 0 auto 30px auto;
+        margin: 0  0 30px 0;
+        p{
+          font-size: 18px;
+          margin-top: 0;
+        }
         h2 {
           text-align: center;
-          width: 290px;
+          width: auto;
           margin-right: auto;
           margin-left: auto;
+          margin-bottom: 15px;
         }
         &.golden {
-          background: linear-gradient(238deg, rgba(113, 53, 19, 0.80) 0.85%, rgba(190, 124, 77, 0.80) 24.12%, rgba(220, 174, 123, 0.80) 47.39%, rgba(190, 124, 77, 0.80) 69.36%, rgba(113, 53, 19, 0.80) 90.69%);
           width: auto;
           h2{
-            color:$text-dark;
-            width: 390px;
+            width: auto;
+            font-size: 24px;
+            margin-bottom: 10px;
           }
-          h5{
-            color:$text-dark;
+          h3{
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+          p{
+            margin: 0;
+            font-size: 18px;
           }
         }
       }
@@ -670,29 +711,25 @@ $border-color: #DDC299;
 
       &_ul {
         list-style: none;
-        padding-left: 0px;
-        text-align: center;
-        height: fit-content;
+        padding-left: 37px;
+        gap: 15px;
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 20px;
       }
 
       &_li {
         position: relative;
-        margin-top: 57px;
-        justify-content: center;
-        display: flex;
 
         &::before {
           content: '';
           background: url(../assets/lotos.svg) no-repeat;
+          background-size: contain;
           display: block;
           position: absolute;
-          width: 42px;
-          height: 42px;
-          background-size: cover;
-          margin-bottom: 20px;
-          top:-42px;
-          left: auto;
-          right: auto;
+          width: 27px;
+          height: 27px;
+          left: -37px;
         }
       }
 
@@ -721,63 +758,70 @@ $border-color: #DDC299;
           right: auto;
         }
       }
-    }
 
+    }
     &_row3 {
       margin-top: 0;
       display: flex;
       position: relative;
-
       .reg {
         position: relative;
-        top:0;
-        left: 0;
-        margin-top: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
+        margin: 25px auto 0 auto ;
+        font-family: "Futura PT", sans-serif;
+        bottom: 0;
         width: 100px;
         height: 100px;
-        padding: 15px 0px 15px 0px;
-        font-size: 16px;
-        transition-duration: 0.3s;
+        border-radius: 80px;
       }
-
       &_container {
         display: flex;
         flex-wrap: wrap;
-        max-width: none;
+        max-width: 100%;
       }
-
       &_block {
-        @include hoverBlock;
-        border-radius: 20px;
-        background: linear-gradient(37deg, rgba(251, 245, 231, 0.80) -13.83%, rgba(255, 250, 239, 0.80) 50.49%, rgba(241, 233, 215, 0.80) 86.98%, rgba(202, 189, 163, 0.80) 109.35%);      width: 410px;
-        width: 100%;
-        padding: 30px;
-        margin-right: 0px ;
-        margin-bottom: 20px;
+        min-width: 190px;
+        width: calc(50% - 40px);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: all 0.3s ease;
-        cursor: default;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &_full{
+          max-width: 100%;
+          padding: 35px;
+          margin-bottom: 30px;
+          width: 100%;
+          color:$first-color;
+          margin-top: 30px;
+          border-radius: 15px;
+          background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
+          &_h3
+          {
+            text-align: center;
+            margin: 0 auto 0 auto ;
+            background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+            background-clip: text;
+            font-size: 24px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
 
         &:nth-child(3),
         &:nth-child(4) {
-          margin-bottom: 20px;
+          margin-bottom: 0;
         }
 
         &_h5 {
-          font-size: 36px;
-
+          font-size: 24px;
           margin: 0;
         }
 
         &_p {
-          font-size: 24px;
-          width: 300px;
+          font-size: 18px;
+          width: 180px;
           margin: 0;
         }
       }
@@ -805,7 +849,7 @@ $border-color: #DDC299;
   #bg-fullwidth-image-2 {
     position: absolute;
     right: -327px;
-    top: 1100px;
+    top: 1700px;
     width: 817px;
     height: 817px;
     animation: scale 14s infinite linear;
@@ -893,20 +937,34 @@ $border-color: #DDC299;
         margin-bottom: 15px;
         color:$first-color;
 
-        background: linear-gradient(37deg, rgba(251, 245, 231, 0.80) -13.83%, rgba(255, 250, 239, 0.80) 50.49%, rgba(241, 233, 215, 0.80) 86.98%, rgba(202, 189, 163, 0.80) 109.35%), linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, rgba(244, 252, 255, 0.80) 42.19%, rgba(255, 249, 237, 0.80) 79.17%);
         h2 {
           text-align: center;
           width: 250px;
           margin-right: auto;
+          margin-bottom: 5px;
           margin-left: auto;
         }
+        ul{
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 16px;
+          margin-top: 0;
+        }
         &.golden {
-          background: linear-gradient(238deg, rgba(113, 53, 19, 0.80) 0.85%, rgba(190, 124, 77, 0.80) 24.12%, rgba(220, 174, 123, 0.80) 47.39%, rgba(190, 124, 77, 0.80) 69.36%, rgba(113, 53, 19, 0.80) 90.69%);
+          width: auto;
           h2{
-            color:$text-dark;
+            width: auto;
+            font-size: 20px;
+            margin-bottom: 10px;
           }
-          h5{
-            color:$text-dark;
+          h3{
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          p{
+            margin: 0;
+            font-size: 16px;
           }
         }
       }
@@ -1006,21 +1064,39 @@ $border-color: #DDC299;
       &_block {
         @include hoverBlock;
         border-radius: 20px;
-        background: linear-gradient(37deg, #FBF5E7 -13.83%, #FFFAEF 50.49%, #F1E9D7 86.98%, #CABDA3 109.35%);
-        opacity: 0.8;
         width: 100%;
         padding: 20px;
         margin-right: 0px ;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         transition: all 0.3s ease;
         cursor: default;
+        &_full{
+          max-width: 100%;
+          padding: 35px;
+          margin-bottom: 20px;
+          width: 100%;
+          color:$first-color;
+          margin-top: 0;
+          border-radius: 15px;
+          background: linear-gradient(254.41deg, rgba(54, 101, 157, 0.3) -11.32%, rgba(77, 136, 190, 0.3) 0.28%, rgba(232, 249, 255, 0.3) 48.18%, rgba(77, 129, 190, 0.3) 96.86%, rgba(54, 101, 157, 0.3) 103.1%);
+          &_h3
+          {
+            text-align: center;
+            margin: 0 auto 0 auto ;
+            background: linear-gradient(158.27deg, #160D0B -26.36%, #CB8001 -0.2%, #FCDA84 26.9%, #FEF4A4 66.15%, #FCDA84 103.53%, #CB8001 137.17%, #180F0D 159.59%);
+            background-clip: text;
+            font-size: 24px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          }
 
         &:nth-child(3),
         &:nth-child(4) {
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
 
         &_h5 {

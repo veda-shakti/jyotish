@@ -152,6 +152,7 @@
   border: 2px solid #CB8001;
   font-family: "Futura PT", sans-serif;
   transition-duration: 0.3s;
+  width: 283px;
 }
 .content.contentProgramma .programma_block_kurs:hover {
   cursor: pointer;
@@ -161,6 +162,359 @@
 }
 .content.contentProgramma .programma_block_last {
   margin-bottom: 120px;
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+  .content.contentProgramma {
+    position: absolute;
+    margin: 0 73px;
+    width: 730px;
+  }
+  .content.contentProgramma .contentblock {
+    margin-top: 67px;
+    width: 730px;
+    display: flex;
+    gap: 20px;
+  }
+  .content.contentProgramma .programma_title {
+    font-size: 36px;
+    line-height: 110%;
+    margin: 0 0 10px 0;
+  }
+  .content.contentProgramma .programma_block {
+    font-size: 18px;
+    line-height: 110%;
+    width: 670px;
+  }
+  .content.contentProgramma .programma_block.programma_mini {
+    width: 170px;
+  }
+  .content.contentProgramma .programma_block_title {
+    font-size: 32px;
+    margin: 0 0 5px 0;
+  }
+  .content.contentProgramma .programma_block_title_h4 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+  .content.contentProgramma .programma_block_description {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  .content.contentProgramma .programma_block_content {
+    font-size: 18px;
+    line-height: 110%;
+    text-align: left;
+    margin: 0;
+  }
+  .content.contentProgramma .programma_block_column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_col1 {
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_col2 {
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_item {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .content.contentProgramma .programma_block_item_lotus {
+    margin-right: 10px;
+    width: 23px;
+    height: 18px;
+  }
+  .content.contentProgramma .programma_block_info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .content.contentProgramma .programma_block_info_col {
+    width: 278px;
+  }
+  .content.contentProgramma .programma_block_PS {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .content.contentProgramma .programma_block_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content.contentProgramma .programma_block_download {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .content.contentProgramma .programma_block_download:hover {
+    cursor: pointer;
+  }
+  .content.contentProgramma .programma_block_kurs {
+    padding: 10px 27px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .content.contentProgramma .programma_block_last {
+    margin-bottom: 65px;
+  }
+}
+@media (min-width: 560px) and (max-width: 959px) {
+  .content.contentProgramma {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+  }
+  .content.contentProgramma .contentblock {
+    width: 440px;
+    display: flex;
+    margin: 67px auto 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .content.contentProgramma .programma_title {
+    font-size: 36px;
+    line-height: 110%;
+    margin: 0 0 10px 0;
+  }
+  .content.contentProgramma .programma_block {
+    font-size: 18px;
+    line-height: 110%;
+    padding: 20px;
+    width: 400px;
+  }
+  .content.contentProgramma .programma_block.programma_mini {
+    width: 170px;
+  }
+  .content.contentProgramma .programma_block.programma_mini.last-child {
+    width: 400px;
+  }
+  .content.contentProgramma .programma_block_title {
+    font-size: 32px;
+    margin: 0 0 5px 0;
+  }
+  .content.contentProgramma .programma_block_title_h4 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+  .content.contentProgramma .programma_block_description {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  .content.contentProgramma .programma_block_content {
+    font-size: 18px;
+    line-height: 110%;
+    text-align: left;
+    margin: 0;
+  }
+  .content.contentProgramma .programma_block_column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_col1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content.contentProgramma .programma_block_col2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content.contentProgramma .programma_block_item {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .content.contentProgramma .programma_block_item_lotus {
+    margin-right: 10px;
+    width: 23px;
+    height: 18px;
+  }
+  .content.contentProgramma .programma_block_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    margin-bottom: 20px;
+  }
+  .content.contentProgramma .programma_block_info_col {
+    width: 195px;
+  }
+  .content.contentProgramma .programma_block_PS {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .content.contentProgramma .programma_block_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+  .content.contentProgramma .programma_block_download {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .content.contentProgramma .programma_block_download:hover {
+    cursor: pointer;
+  }
+  .content.contentProgramma .programma_block_kurs {
+    padding: 10px 27px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .content.contentProgramma .programma_block_last {
+    margin-bottom: 65px;
+  }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+  .content.contentProgramma {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  .content.contentProgramma .contentblock {
+    align-self: center;
+    width: 290px;
+    display: flex;
+    margin: 67px auto 0 auto;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .content.contentProgramma .programma_title {
+    font-size: 24px;
+    line-height: 110%;
+    margin: 0 0 10px 0;
+  }
+  .content.contentProgramma .programma_block {
+    font-size: 18px;
+    line-height: 110%;
+    padding: 20px;
+    width: 250px;
+  }
+  .content.contentProgramma .programma_block.programma_mini {
+    width: 250px;
+  }
+  .content.contentProgramma .programma_block.programma_mini.last-child {
+    width: 250px;
+  }
+  .content.contentProgramma .programma_block_title {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+  }
+  .content.contentProgramma .programma_block_title_h4 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  .content.contentProgramma .programma_block_description {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  .content.contentProgramma .programma_block_content {
+    font-size: 16px;
+    line-height: 110%;
+    text-align: left;
+    margin: 0;
+  }
+  .content.contentProgramma .programma_block_column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_col1 {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_col2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content.contentProgramma .programma_block_item {
+    font-size: 18px;
+    line-height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .content.contentProgramma .programma_block_item_lotus {
+    margin-bottom: 10px;
+    width: 23px;
+    height: 18px;
+  }
+  .content.contentProgramma .programma_block_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 10px;
+    margin-bottom: 20px;
+  }
+  .content.contentProgramma .programma_block_info_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+  }
+  .content.contentProgramma .programma_block_PS {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .content.contentProgramma .programma_block_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .content.contentProgramma .programma_block_download {
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .content.contentProgramma .programma_block_download:hover {
+    cursor: pointer;
+  }
+  .content.contentProgramma .programma_block_kurs {
+    padding: 10px 27px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 250px;
+  }
+  .content.contentProgramma .programma_block_last {
+    margin-bottom: 65px;
+  }
 }
 
 /*# sourceMappingURL=ContentProgrammaKursa.css.map */

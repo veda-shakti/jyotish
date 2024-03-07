@@ -109,7 +109,6 @@ footer a {
     height: 925px;
     animation: scale 14s infinite linear;
     border-radius: 50%;
-    filter: blur(1px);
     user-select: none;
     -moz-user-select: none; /* Для Firefox */
     -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -443,16 +442,16 @@ footer a {
 @media (min-width: 960px) and (max-width: 1399px) {
 
     #bg-image-1.bg-img-1 {
-        width: 806px;
-        height: 818px;
+        width: 620px;
+        height: 650px;
     }
 
     .opening.left1.bg-img-1,
     .closing.left1.bg-img-1 {
-        left: -416px;
-        top: -281px;
-        width: 1276px;
-        height: 1276px;
+        left: -19px;
+        bottom: -68px;
+        width: 620px;
+        height: 650px;
     }
     #bg-image-2.bg-img-1 {
         width: 585px;
@@ -467,16 +466,16 @@ footer a {
     }
 
     #bg-image-3.bg-img-2 {
-        width: 627px;
-        height: 627px;
+        width: 761px;
+        height: 761px;
     }
     .opening.right2.bg-img-2,
     .closing.right2.bg-img-2 {
         position: absolute;
-        top:-54px;
-        right: -277px;
-        width: 627px;
-        height: 627px;
+        bottom:-153px;
+        right: -199px;
+        width: 761px;
+        height: 761px;
     }
 
     #bg-image-4.bg-img-2 {
@@ -496,10 +495,9 @@ footer a {
         position: absolute;
         left: 0px;
         top: 0px;
-        width: 760px;
-        height: 760px;
+        width: 560px;
+        height: 560px;
         animation: scale 14s infinite linear;
-        filter: blur(3px);
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -508,10 +506,10 @@ footer a {
     .opening.left1.bg-img-3,
     .closing.left1.bg-img-3 {
         position: absolute;
-        left: -331px;
-        top: -260px;
-        width: 760px;
-        height: 760px;
+        left: -100px;
+        bottom: -50px;
+        width: 560px;
+        height: 560px;
     }
     #bg-image-2.bg-img-3 {
         position: absolute;
@@ -542,7 +540,6 @@ footer a {
         width: 640px;
         height: 640px;
         animation: scale 14s infinite linear;
-        filter: blur(3px);
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -562,7 +559,6 @@ footer a {
         right: 0px;
         width: 423px;
         height: 596px;
-        filter: blur(1px);
         animation: scale 14s infinite linear;
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
@@ -593,9 +589,7 @@ footer a {
         top: 0px;
         width: 862px;
         height: 862px;
-        animation: rotate 120s infinite linear;
         border-radius: 50%;
-        filter: blur(1px);
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -605,10 +599,10 @@ footer a {
     .opening.left1.bg-img-1,
     .closing.left1.bg-img-1 {
         position: absolute;
-        left: -550px;
-        top: -450px;
-        width: 862px;
-        height: 862px;
+        left: -285px;
+        bottom: -110px;
+        width: 883px;
+        height: 932px;
         border-radius: 50%;
     }
     #bg-image-2.bg-img-1 {
@@ -617,8 +611,6 @@ footer a {
         right: 0px;
         width: 626px;
         height: 626px;
-        filter: blur(3px);
-        animation: rotate 80s infinite linear;
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -637,8 +629,8 @@ footer a {
         position: absolute;
         right: 0;
         top: 0;
-        width: 532px;
-        height: 532px;
+        width: 688px;
+        height: 631px;
         animation: scale 14s infinite linear;
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
@@ -649,10 +641,10 @@ footer a {
     .opening.right2.bg-img-2,
     .closing.right2.bg-img-2 {
         position: absolute;
-        top:-230px;
-        right: -250px;
-        width: 532px;
-        height: 532px;
+        bottom:27px;
+        right: -286px;
+        width: 688px;
+        height: 631px;
     }
 
     #bg-image-4.bg-img-2 {
@@ -676,10 +668,9 @@ footer a {
         position: absolute;
         left: 0px;
         top: 0px;
-        width: 685px;
-        height: 685px;
+        width: 500px;
+        height: 500px;
         animation: scale 14s infinite linear;
-        filter: blur(3px);
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -688,10 +679,10 @@ footer a {
     .opening.left1.bg-img-3,
     .closing.left1.bg-img-3 {
         position: absolute;
-        left: -377px;
-        top: -239px;
-        width: 685px;
-        height: 685px;
+        left: -80px;
+        bottom: -30px;
+        width: 500px;
+        height: 500px;
     }
     #bg-image-2.bg-img-3 {
         position: absolute;
@@ -819,11 +810,9 @@ footer a {
         position: absolute;
         left: 0px;
         top: 0px;
-        width: 600px;
-        height: 600px;
-        animation: rotate 120s infinite linear;
+        width: 605px;
+        height: 638px;
         border-radius: 50%;
-        filter: blur(1px);
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -833,10 +822,10 @@ footer a {
     .opening.left1.bg-img-1,
     .closing.left1.bg-img-1 {
         position: absolute;
-        left: -300px;
-        top: -200px;
-        width: 600px;
-        height: 600px;
+        left: -215px;
+        bottom: -88px;
+        width: 605px;
+        height: 638px;
         border-radius: 50%;
     }
     #bg-image-2.bg-img-1 {
@@ -845,8 +834,6 @@ footer a {
         right: 0px;
         width: 407px;
         height: 407px;
-        filter: blur(3px);
-        animation: rotate 80s infinite linear;
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -865,8 +852,8 @@ footer a {
         position: absolute;
         right: 0;
         top: 0;
-        width: 301px;
-        height: 301px;
+        width: 510px;
+        height: 468px;
         animation: scale 14s infinite linear;
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
@@ -877,10 +864,10 @@ footer a {
     .opening.right2.bg-img-2,
     .closing.right2.bg-img-2 {
         position: absolute;
-        top:-70px;
-        right: -100px;
-        width: 301px;
-        height: 301px;
+        bottom:-42px;
+        right: -238px;
+        width: 510px;
+        height: 468px;
     }
 
     #bg-image-4.bg-img-2 {
@@ -905,10 +892,9 @@ footer a {
         position: absolute;
         left: 0px;
         top: 0px;
-        width: 635px;
-        height: 635px;
+        width: 350px;
+        height: 350px;
         animation: scale 14s infinite linear;
-        filter: blur(3px);
         user-select: none;
         -moz-user-select: none; /* Для Firefox */
         -webkit-user-select: none; /* Для Chrome, Safari и Opera */
@@ -917,10 +903,10 @@ footer a {
     .opening.left1.bg-img-3,
     .closing.left1.bg-img-3 {
         position: absolute;
-        left: -377px;
-        top: -239px;
-        width: 635px;
-        height: 635px;
+        left: -50px;
+        bottom: -20px;
+        width: 350px;
+        height: 350px;
     }
     #bg-image-2.bg-img-3 {
         position: absolute;
@@ -1054,7 +1040,6 @@ footer a {
         margin-bottom: 40px;
     }
     footer a {
-        color: #9D5B36;
         font-size: 16px;
         font-family: "Futura PT", sans-serif;
         line-height: 110%;

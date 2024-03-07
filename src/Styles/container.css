@@ -183,13 +183,19 @@
 
 @media (min-width: 960px) and (max-width: 1399px) {
     .container.intro {
-        background:  linear-gradient(94deg, rgba(255, 255, 255, 0.80) 23.08%, rgba(244, 252, 255, 0.80) 50.44%, rgba(255, 249, 237, 0.80) 74.42%);
         width: 600px;
         height: 120px;
         position: absolute;
     }
+    .notification {
+        opacity: 0.3;
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     .container.phone {
-        background-image: url(../assets/phone_pic-notebook.png);
         width: 950px;
         height: 524px;
         position: fixed;
@@ -201,34 +207,56 @@
         overflow: hidden;
     }
     .container .sparkle#sparkle3 {
-        right: -83px;
-        top: -83px;
+        right: -53px;
+        top: -53px;
         animation: sparkle1 2s infinite; /* Добавляем анимацию */
         animation-delay: 0.3s;
     }
     .container .sparkle#sparkle4 {
-        bottom: -77px;
-        left: -77px;
+        bottom: -52px;
+        left: -52px;
         animation: sparkle2 2s infinite; /* Добавляем анимацию */
     }
     .postcontainer {
-        height: 395px;
-        width: 823px;
+        height: 410px;
+        width: 863px;
         overflow: hidden;
         position: fixed;
-        margin: 65px 0 0 75px;
+        margin: 55px 0 0 45px;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none;  /* IE and Edge */
         display: flex;
+    }
+    .bg-phone {
+        background-image: url(../assets/phone_pic-notebook.png);
+        width: 950px;
+        height: 524px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        z-index: 100;
+        pointer-events: none;
+        background-position: center;
     }
 
 }
 @media (min-width: 560px) and (max-width: 959px) {
     .container.intro {
-        background:  linear-gradient(94deg, rgba(255, 255, 255, 0.80) 23.08%, rgba(244, 252, 255, 0.80) 50.44%, rgba(255, 249, 237, 0.80) 74.42%);
         width: 370px;
         height: 120px;
         position: absolute;
+    }
+    .notification {
+        opacity: 0.3;
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .container.phone {
         background-image: none;
@@ -241,6 +269,11 @@
         right: 0;
         margin: auto;
         overflow: hidden;
+    }
+    .bg-phone{
+        background: unset;
+        height: 100%;
+        width: 100%;
     }
     #sparkle3,
     #sparkle4 {
@@ -255,6 +288,7 @@
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none;  /* IE and Edge */
         display: flex;
+        background: unset;
     }
     .container.phone.lastphone {
         background-image: none;
@@ -263,10 +297,17 @@
 
 @media (min-width: 320px) and (max-width: 559px) {
     .container.intro {
-        /*background-image: url(../assets/notification-mobile.png);*/
         width: 250px;
         height: 120px;
         position: absolute;
+    }
+    .notification {
+        opacity: 0.3;
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .container.phone {
         background-image: none;
@@ -293,6 +334,13 @@
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none;  /* IE and Edge */
         display: flex;
+        background: unset;
+
+    }
+    .bg-phone{
+        background: unset;
+        height: 100%;
+        width: 100%;
     }
     .container.phone.lastphone {
         background-image: none;

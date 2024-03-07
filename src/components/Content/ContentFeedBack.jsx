@@ -181,7 +181,7 @@ const ContentFeedBack = (props) => {
                 <div className="scrolldiv" id={`scroll${props.contentid}`}>
                     <div className="contentblock">
                         <div className="frame13_block">
-                            <h2 className="frame13_h2">Что говорят об Астропрогнозе?</h2>
+                            <h2 className="frame13_h2">Что говорят о курсе Джйотиш?</h2>
                             <div className="frame13_content">
                                 <div>
                                     {reviews.map((review, index) => (
