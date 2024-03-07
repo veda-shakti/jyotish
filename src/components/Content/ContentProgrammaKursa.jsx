@@ -2,10 +2,23 @@ import React, {useContext} from 'react';
 import '../../Styles/ContentProgrammaKursa.css'
 import lotus from '../../assets/lotos-programma.svg'
 import ModalContext from "../modal/ModalContext1";
+import kurs from '../../assets/kurs_Jyotish.pdf';
 
 
 const ContentProgrammaKursa = (props) => {
     const { setShowModal, setKursModal } = useContext(ModalContext);
+
+    const downloadKurs = () => {
+        const link = document.createElement('a');
+        // Устанавливаем URL файла
+        link.href = kurs;
+        // Указываем, что файл должен быть скачан
+        link.download = 'kurs_Jyotish.pdf';
+        // Имитируем клик по ссылке
+        link.click();
+        // Очищаем память, удаляя созданный элемент
+        link.remove();
+    }
 
     const showkurs = () => {
         setShowModal(true)
@@ -91,7 +104,7 @@ const ContentProgrammaKursa = (props) => {
                             </div>
                             <span className="programma_block_PS">*I ступень доступна для прохождения с целью ознакомления с курсом без обязательного прохождения II и III ступеней. Если вы хотите принять участие в I ступени курса, нажмите на кнопку ниже.</span>
                             <div className="programma_block_buttons">
-                                <span className="programma_block_download">Скачать подробную программу курса</span>
+                                <span onClick={downloadKurs} className="programma_block_download">Скачать подробную программу курса</span>
                                 <button
                                     onClick={showkurs}
                                 className="programma_block_kurs">Иду на I ступень</button>
