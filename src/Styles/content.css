@@ -35,6 +35,8 @@
     opacity: 1;
     transform: translateY(0);
     transition: transform 0.4s ease-in-out, opacity 1s  ease-in-out;
+    position: relative;
+    z-index: 100;
 }
 .content.intro {
     font-family: Futura PT, sans-serif;
