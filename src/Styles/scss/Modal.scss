@@ -146,6 +146,20 @@
       -webkit-text-fill-color: transparent;
     }
   }
+  .close_full {
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+    top: 20px; /* Позиционирование от верхнего края окна браузера */
+    left: unset; /* Позиционирование от левого края окна браузера */
+    transform: unset;
+    right: 20px;
+    z-index: 1005;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      scale: 1.05;
+    }
+  }
 }
 @media  (min-width: 560px) and (max-width: 959px) {
 
@@ -174,6 +188,20 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+  }
+  .close_full {
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+    top: 20px; /* Позиционирование от верхнего края окна браузера */
+    left: unset; /* Позиционирование от левого края окна браузера */
+    transform: unset;
+    right: 20px;
+    z-index: 1005;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      scale: 1.05;
     }
   }
 }

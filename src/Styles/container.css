@@ -72,22 +72,26 @@
     top: -102px;
     animation: sparkle1 2s infinite; /* Добавляем анимацию */
     animation-delay: 0.3s;
+    z-index: 99999;
 }
 .container.intro .sparkle#sparkle2 {
     right: -104px;
     bottom: -102px;
     animation: sparkle2 2s infinite; /* Добавляем анимацию */
+    z-index: 99999;
 }
 .container .sparkle#sparkle3 {
     right: -32px;
     top: -25px;
     animation: sparkle1 2s infinite; /* Добавляем анимацию */
     animation-delay: 0.3s;
+    z-index: 99999;
 }
 .container .sparkle#sparkle4 {
     bottom: -30px;
     left: -30px;
     animation: sparkle2 2s infinite; /* Добавляем анимацию */
+    z-index: 99999;
 }
 
 .container.phone {
@@ -219,13 +223,15 @@
     }
     .postcontainer {
         height: 410px;
-        width: 863px;
+        width: 853px;
         overflow: hidden;
         position: fixed;
-        margin: 55px 0 0 45px;
+        margin: 60px 0 0 45px;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none;  /* IE and Edge */
         display: flex;
+        z-index: -1;
+        border-radius: 50px;
     }
     .bg-phone {
         background-image: url(../assets/phone_pic-notebook.png);

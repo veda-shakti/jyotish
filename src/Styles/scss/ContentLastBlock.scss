@@ -134,7 +134,7 @@
     .lastblock_alt {
       font-size: 24px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 110%;
       height: auto;
       position: relative;
@@ -223,6 +223,10 @@
         top:71px;
         left: 185px;
         width: 240px;
+        background: unset;
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
       }
       .lastblock_cost{
         margin-bottom: 10px;
@@ -248,7 +252,7 @@
       .lastblock_alt {
         font-size: 18px;
         position: absolute;
-        left: 195px;
+        left: 185px;
         bottom: 30px;
         margin: 0;
       }
@@ -257,7 +261,11 @@
         text-align: left;
         width: 350px;
         font-size: 14px;
-        left: 195px;
+        left: 185px;
+        background: unset;
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
         bottom: 30px;
         margin: 0;
       }
@@ -340,6 +348,10 @@
         top:41px;
         left: 110px;
         width: 150px;
+        background: unset;
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
       }
       .lastblock_cost{
         margin-bottom: 5px;
@@ -378,6 +390,10 @@
         left: 20px;
         bottom: 20px;
         margin: 0;
+        background: unset;
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
       }
     }
   }
@@ -461,6 +477,10 @@
         top:41px;
         left: 85px;
         width: fit-content;
+        background: unset;
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
       }
       .lastblock_cost{
         margin-bottom: 5px;
@@ -500,6 +520,10 @@
         left: 20px;
         bottom: 20px;
         margin: 0;
+        background: unset;
+        background-clip: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
       }
     }
   }

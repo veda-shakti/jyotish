@@ -260,6 +260,7 @@
         margin-right: 0;
       }
       .button-submit {
+        margin-top: 20px;
         padding: 15px 30px;
         background: linear-gradient(133.02deg, #160D0B -12.75%, #CB8001 19.2%, #FCDA84 38.37%, #FEF4A4 50.51%, #FCDA84 62.01%, #CB8001 79.91%, #180F0D 114.41%);
         color: #133272;
@@ -273,6 +274,7 @@
         margin-left: auto;
         margin-right: auto;
         transition: all 0.3s;
+        font-family: "Futura PT", sans-serif;
         font-weight: 700;
         opacity: 1;
         &:hover{
@@ -285,7 +287,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 0 20px 0;
+        margin: 0 0 0 0;
       }
       .modal_pay_request{
         display: flex;
@@ -295,6 +297,20 @@
         text-align: center;
         font-size: 18px;
       }
+    }
+  }
+  .close_full_pay {
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+    top: 20px; /* Позиционирование от верхнего края окна браузера */
+    left: unset; /* Позиционирование от левого края окна браузера */
+    transform: unset;
+    right: 20px;
+    z-index: 1005;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      scale: 1.05;
     }
   }
 }
@@ -415,6 +431,20 @@
         text-align: center;
         font-size: 16px;
       }
+    }
+  }
+  .close_full_pay {
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+    top: 20px; /* Позиционирование от верхнего края окна браузера */
+    left: unset; /* Позиционирование от левого края окна браузера */
+    transform: unset;
+    right: 20px;
+    z-index: 1005;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      scale: 1.05;
     }
   }
 }
