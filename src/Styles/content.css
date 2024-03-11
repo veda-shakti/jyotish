@@ -45,16 +45,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    -webkit-background-clip: text;
-    background-clip: text;
     margin: 15px 22px;
+    -webkit-text-fill-color: transparent;
     background: linear-gradient(136.37deg, #160D0B -10.78%, #CB8001 4.95%, #FCDA84 28.53%, #FEF4A4 49.09%, #FCDA84 74.49%, #CB8001 91.42%, #180F0D 109.57%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .content.intro > span{
     text-align: center;
+
+
 }
 .content.introphone {
     margin: 81px 110px;

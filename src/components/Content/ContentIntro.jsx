@@ -6,7 +6,9 @@ const ContentIntro = (props) => {
             <div className="content intro" id={`content${props.contentid}`}>
                 <div className="scrolldiv"></div>
                 <div className="contentblock"></div>
-                {props.contentvalue}
+                <span>
+                    {props.contentvalue}
+                </span>
             </div>
         );
 };
