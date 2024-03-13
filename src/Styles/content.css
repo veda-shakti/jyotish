@@ -54,7 +54,7 @@
 .content.intro > span{
     text-align: center;
     -webkit-background-clip: text;
-
+    background: linear-gradient(136.37deg, #160D0B -10.78%, #CB8001 4.95%, #FCDA84 28.53%, #FEF4A4 49.09%, #FCDA84 74.49%, #CB8001 91.42%, #180F0D 109.57%);
 
 }
 .content.introphone {
