@@ -53,6 +53,7 @@
 }
 .content.intro > span{
     text-align: center;
+    -webkit-background-clip: text;
 
 
 }
