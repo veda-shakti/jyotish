@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import '../../Styles/ContentProgrammaKursa.css'
 import lotus from '../../assets/lotos-programma.svg'
 import ModalContext from "../modal/ModalContext1";
-import kurs from '../../assets/kurs_Jyotish.pdf';
+import kurs from '../../assets/Программа Курс Джйотиш.pdf';
 
 
 const ContentProgrammaKursa = (props) => {
