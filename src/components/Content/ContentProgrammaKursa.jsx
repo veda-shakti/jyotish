@@ -163,7 +163,7 @@ const ContentProgrammaKursa = (props) => {
                                 </div>
                             </div>
                             <div className="programma_block_buttons">
-                                <span className="programma_block_download">Скачать подробную программу курса</span>
+                                <span onClick={downloadKurs} className="programma_block_download">Скачать подробную программу курса</span>
                                 <button onClick={showkurs} className="programma_block_kurs">Иду на весь курс</button>
                             </div>
                         </div>
@@ -207,7 +207,7 @@ const ContentProgrammaKursa = (props) => {
                                 </div>
                             </div>
                             <div className="programma_block_buttons">
-                                <span className="programma_block_download">Скачать подробную программу курса</span>
+                                <span onClick={downloadKurs} className="programma_block_download">Скачать подробную программу курса</span>
                                 <button onClick={showkurs} className="programma_block_kurs">Иду на весь курс</button>
                             </div>
                         </div>

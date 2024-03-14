@@ -485,7 +485,8 @@
       .lastblock_cost{
         margin-bottom: 5px;
         position: relative;
-        width:50%;
+        width: fit-content;
+        max-width: 120px;
         .lastblock_p {
           margin-bottom: 5px;
           position: relative;
